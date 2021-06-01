@@ -14,8 +14,6 @@ build
 .env.test.local
 .env.production.local
 
-
-# Do we need these?
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
