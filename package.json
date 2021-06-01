@@ -1,0 +1,13 @@
+{
+  "name": "bnb-portugal",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "npm install --prefix backend"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-static-block": "^7.14.3"
+  },
+  "devDependencies": {
+    "@babel/helper-compilation-targets": "^7.14.4"
+  }
+}
