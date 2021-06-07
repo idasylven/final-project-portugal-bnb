@@ -3,5 +3,10 @@
   "version": "1.0.0",
   "scripts": {
     "postinstall": "npm install --prefix backend"
+  },
+  "dependencies": {
+    "moment": "^2.29.1",
+    "react-dates": "^21.8.0",
+    "react-select": "^4.3.1"
   }
 }

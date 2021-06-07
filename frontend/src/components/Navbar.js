@@ -10,7 +10,7 @@ const Navbar = () => {
   })
 
   
-handleToggle = () => {
+const handleToggle = () => {
     setState({isOpen:!state.isOpen})
   }
 

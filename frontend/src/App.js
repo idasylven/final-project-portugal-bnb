@@ -3,6 +3,7 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import About from './pages/About'
+import Accomodation from './pages/Accomodation'
 import Activities from './pages/Activities'
 import Book from './pages/Book'
 // import Confirmation from './pages/Confirmation'
@@ -17,6 +18,7 @@ export const App = () => {
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
+          <Route exact path="/accomodation" component={Accomodation}/>
           <Route exact path="/book" component={Book} />
           <Route path="/book/:slug" component={Confirmation} />
           <Route path="/activities" component={Activities} />
