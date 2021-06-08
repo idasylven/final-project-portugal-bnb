@@ -19,8 +19,8 @@ export const App = () => {
           <Route exact path="/" component={Home} />
           <Route exact path="/accomodation" component={Accomodation}/>
           <Route exact path="/book" component={Book} />
-          <Route path="/confirmation" component={Confirmation} />
-          <Route excat path="/activities" component={Activities} />
+          <Route exact path="/confirmation" component={Confirmation} />
+          <Route exact path="/activities" component={Activities} />
           <Route exact path="/about" component={About} />
           <Route component={Error} />
         </Switch>
@@ -28,5 +28,5 @@ export const App = () => {
   )
 }
 
-
+// Remove exact from Book and Confirmation
 // Perhaps we need to move the Navbar for it to display below hero image?
