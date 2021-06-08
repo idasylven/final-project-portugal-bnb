@@ -4,11 +4,12 @@ import { DateRangePicker } from "react-dates"
 import "react-dates/lib/css/_datepicker.css"
 
 const Datepicker = () => {
-  const [startDate, setStartDate] = React.useState();
-  const [endDate, setEndDate] = React.useState();
-  const [focusedInput, setFocusedInput] = React.useState();
+  const [startDate, setStartDate] = React.useState()
+  const [endDate, setEndDate] = React.useState()
+  const [focusedInput, setFocusedInput] = React.useState()
+
   return (
-    <div className="App">
+    <form className="booking-form">
       <DateRangePicker
         startDate={startDate}
         startDateId="start-date"
@@ -21,7 +22,8 @@ const Datepicker = () => {
         focusedInput={focusedInput}
         onFocusChange={(focusedInput) => setFocusedInput(focusedInput)}
       />
-    </div>
+      
+    </form>
   );
 }
 

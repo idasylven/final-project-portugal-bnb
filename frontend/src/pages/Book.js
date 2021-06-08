@@ -1,20 +1,17 @@
 import React from 'react'
 
-import Datepicker from '../components/Datepicker'
-import DropdownRoom from '../components/DropdownRoom'
-import DropdownPax from '../components/DropdownPax'
 import GuestDetails from '../components/GuestDetails'
-
+import Button from '../components/Button'
 
 const Book = () => {
   return (
     <div>
-      <Datepicker />
-      <DropdownRoom />
-      <DropdownPax />
       <GuestDetails />
+      <Button label="Book" />
     </div>
   )
 }
 
 export default Book
+
+// Add function to button
