@@ -1,5 +1,9 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Provider } from 'react-redux'
+import { combineReducers, configureStore } from '@reduxjs/toolkit'
+
+import guestreservation from './reducers/reservation'
 
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
@@ -11,8 +15,15 @@ import Home from './pages/Home'
 
 import Navbar from './components/Navbar'
 
+const reducer = combineReducers({
+  guestreservation: guestreservation.reducer
+})
+
+const store = configureStore({ reducer })
+
 export const App = () => {
   return (
+    <Provider store={store}>
       <BrowserRouter>
         <Navbar />
         <Switch>
@@ -25,8 +36,9 @@ export const App = () => {
           <Route component={Error} />
         </Switch>
       </BrowserRouter>
+    </Provider>
   )
 }
 
-// Remove exact from Book and Confirmation
+
 // Perhaps we need to move the Navbar for it to display below hero image?
