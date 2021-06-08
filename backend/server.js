@@ -14,7 +14,7 @@ mongoose.connect(mongoUrl, {
 })
 mongoose.Promise = Promise
 
-const GuestReservation = mongoose.model("GuestReservation", {
+const GuestAccomodation = mongoose.model("GuestAccomodation", {
   date: {
     type: Number, 
     required: true,
@@ -26,7 +26,11 @@ const GuestReservation = mongoose.model("GuestReservation", {
   pax: {
     type: Number, 
     required: true,
-  },
+  }
+})
+
+const GuestDetails = mongoose.model("GuestDetails", {
+  
   firstname: {
     type: String, 
     required: true,
@@ -43,7 +47,7 @@ const GuestReservation = mongoose.model("GuestReservation", {
     type: Number, 
     required: true,
   }
-});
+})
 
 // Defines the port the app will run on. Defaults to 8080, but can be 
 // overridden when starting the server. For example:
@@ -61,14 +65,35 @@ app.get('/', (req, res) => {
   res.send(listEndpoints(app))
 })
 
-app.post("/book", async (req, res) => {
-  const { date, roomtype, pax, firstname, lastname, email, phonenumber } = req.body
+app.post("/accomodation", async (req, res) => {
+  const { date, roomtype, pax } = req.body
 
   try {
-    const newGuestReservation = await new GuestReservation ({
+    const newGuestAccomodation = await new GuestAccomodation ({
       date,
       roomtype,
-      pax,
+      pax
+    }).save() 
+
+    res.json ({
+      success: true,
+      userID: newGuestAccomodation._id,
+      date: newGuestAccomodation.date,
+      roomtype: newGuestAccomodation.roomtype,
+      pax: newGuestAccomodation.pax
+    })
+
+  } catch (error) {
+    res.status(400).json({ success: false, message: "Sorry something went wrong!"})
+  }
+})
+
+app.post("/book", async (req, res) => {
+  const { firstname, lastname, email, phonenumber } = req.body
+
+  try {
+    const newGuestDetails = await new GuestDetails ({
+      
       firstname,
       lastname,
       email,
@@ -77,21 +102,17 @@ app.post("/book", async (req, res) => {
 
     res.json ({
       success: true,
-      userID: newGuestReservation._id,
-      date: newGuestReservation.date,
-      roomtype: newGuestReservation.roomtype,
-      pax: newGuestReservation.pax,
-      firstname: newGuestReservation.firstname,
-      lastname: newGuestReservation.lastname,
-      email: newGuestReservation.email,
-      phonenumber: newGuestReservation.phonenumber
+      userID: newGuestDetails._id,
+      firstname: newGuestDetails.firstname,
+      lastname: newGuestDetails.lastname,
+      email: newGuestDetails.email,
+      phonenumber: newGuestDetails.phonenumber
     })
 
   } catch (error) {
     res.status(400).json({ success: false, message: "Sorry something went wrong!"})
   }
 })
-
 
 // Start the server
 app.listen(port, () => {
