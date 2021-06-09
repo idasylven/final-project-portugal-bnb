@@ -1,0 +1,15 @@
+.header-container {
+  height: 80vh;
+  width: 100%;
+  border: solid black 2px;
+}
+
+.header-box {
+  height: 100%;
+  width: 100%;
+  border: red solid 2px;
+}
+
+.header-img {
+  object-fit: cover;
+}

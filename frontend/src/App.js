@@ -37,8 +37,9 @@ export const App = () => {
         </Switch>
       </BrowserRouter>
     </Provider>
+    
   )
 }
 
-
+// Do we really need exact on all paths? Won´t work if we remove them, should we do something else then instead
 // Perhaps we need to move the Navbar for it to display below hero image?
