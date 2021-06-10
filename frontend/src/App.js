@@ -25,7 +25,6 @@ export const App = () => {
   return (
     <Provider store={store}>
       <BrowserRouter>
-        <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/accomodation" component={Accomodation}/>
@@ -37,9 +36,10 @@ export const App = () => {
         </Switch>
       </BrowserRouter>
     </Provider>
-    
+   
   )
 }
 
+// Put the provider store back on line 26 and 39
 // Do we really need exact on all paths? Won´t work if we remove them, should we do something else then instead
 // Perhaps we need to move the Navbar for it to display below hero image?

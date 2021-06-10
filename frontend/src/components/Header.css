@@ -5,11 +5,27 @@
 }
 
 .header-box {
+  background: url("/assets/images/terrace.jpg");
+  /* background: url("https://unsplash.com/photos/6Aakvv7AJkE"); */
+  background-size: cover;
   height: 100%;
   width: 100%;
   border: red solid 2px;
 }
 
-.header-img {
-  object-fit: cover;
+/* .header-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+} */
+
+.loggo {
+  background-color: #edc0a7;
+  border: solid 2px #442e20;
+  border-radius: 50%;
+  height: 350px;
+  width: 350px;
+  position: relative;
+  top: 190px;
+  left: 860px;
 }

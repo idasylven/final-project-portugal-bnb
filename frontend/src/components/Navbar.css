@@ -1,0 +1,19 @@
+/* .nav-container {
+} */
+
+.nav-box {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1.5rem 10rem 0 10rem;
+}
+
+a {
+  text-decoration: none;
+  color: #442e20;
+  font-family: Graduate;
+  font-size: 35px;
+}
+
+li {
+}
