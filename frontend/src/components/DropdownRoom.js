@@ -1,16 +1,15 @@
 import React from 'react'
 
-const DropdownRoom = ({ roomtype, setRoomtype }) => {
+const DropdownRoom = ({ roomType, setRoomType }) => {
 
   return (
     <div>
-    
       <label>Rooms</label>
       <select
-        onChange={event => setRoomtype(event.target.value)}
+        onChange={event => setRoomType(event.target.value)}
         required
         aria-label='Select room'
-        value={roomtype}
+        value={roomType}
         >
           <option disabled aria-label='Choose a room'></option>
           <option value='Red room'>Red room</option>

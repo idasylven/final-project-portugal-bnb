@@ -6,9 +6,8 @@ import "react-dates/lib/css/_datepicker.css"
 
 import reservation from '../reducers/reservation'
 
-const Datepicker = () => {
-  const [startDate, setStartDate] = React.useState()
-  const [endDate, setEndDate] = React.useState()
+const Datepicker = ({ startDate, setStartDate, endDate, setEndDate }) => {
+ 
   const [focusedInput, setFocusedInput] = React.useState() //KARAN- Should it be an action like onchange, or similar here?
 
   const dispatch = useDispatch()
@@ -22,8 +21,8 @@ const Datepicker = () => {
         endDateId="end-date"
         onDatesChange={({ startDate, endDate }) => {
           // Add a batch to dispatch everything in one go
-         dispatch(reservation.actions.setStartDate(startDate))
-         dispatch(reservation.actions.setEndDate(endDate))
+         setStartDate(startDate)
+         setEndDate(endDate)
         }}
         focusedInput={focusedInput}
         onFocusChange={(focusedInput) => setFocusedInput(focusedInput)}

@@ -81,28 +81,29 @@ app.get('/', (req, res) => {
 })
 
 app.post("/reservation", async (req, res) => {
-  const { startdate, enddate, roomtype, pax, firstname, lastname, email, phonenumber } = req.body
+  const { startDate, endDate, roomType, pax, firstName, lastName, email, phoneNumber } = req.body
 
   try {
     const newAccomodation = await new GuestAccomodation ({
-      startdate,
-      enddate,
-      roomtype,
+      startDate,
+      endDate,
+      roomType,
       pax
     }).save()
     const newDetails = await new GuestDetails ({
-      firstname,
-      lastname,
+      firstName,
+      lastName,
       email,
-      phonenumber
+      phoneNumber
     }).save()
     const newReservation = await new GuestReservation ({
       accomodation: newAccomodation,
       details: newDetails
     }).save()
 
+    res.status(201).json({ success: true, newReservation })
   } catch (error) {
-
+    res.status(400).json({ success: false, message: 'Page not found', error })
   }
 })
 
