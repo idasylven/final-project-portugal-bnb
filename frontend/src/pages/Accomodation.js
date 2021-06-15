@@ -27,7 +27,6 @@ const Accomodation = () => {
     history.push("/book")
   }
 
-
   return (
     <div>
       <Datepicker startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
@@ -38,6 +37,4 @@ const Accomodation = () => {
   )
 }
 
-export default Accomodation
-
-// Add function to button - fetch post method 
+export default Accomodation 

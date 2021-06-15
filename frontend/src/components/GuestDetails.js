@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GuestDetails = ({ firstName, setFirstname, lastName, setLastname, email, setEmail, phoneNumber, setPhoneNumber }) => {
+const GuestDetails = ({ firstName, setFirstName, lastName, setLastName, email, setEmail, phoneNumber, setPhoneNumber }) => {
 
   return (
     <div>
@@ -8,13 +8,13 @@ const GuestDetails = ({ firstName, setFirstname, lastName, setLastname, email, s
         label="First name"
         type="text"
         id="firstName"
-        onChange={event => setFirstname(event.target.value)}
+        onChange={event => setFirstName(event.target.value)}
         value={firstName}
       />
       <input
         type="text"
         id="lastName"
-        onChange={event => setLastname(event.target.value)}
+        onChange={event => setLastName(event.target.value)}
         value={lastName}
       />
       <input

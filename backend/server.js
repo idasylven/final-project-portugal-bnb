@@ -81,20 +81,20 @@ app.get('/', (req, res) => {
 })
 
 app.post("/reservation", async (req, res) => {
-  const { startDate, endDate, roomType, pax, firstName, lastName, email, phoneNumber } = req.body
+  const { startdate, enddate, roomtype, pax, firstname, lastname, email, phonenumber } = req.body
 
   try {
     const newAccomodation = await new GuestAccomodation ({
-      startDate,
-      endDate,
-      roomType,
+      startdate,
+      enddate,
+      roomtype,
       pax
     }).save()
     const newDetails = await new GuestDetails ({
-      firstName,
-      lastName,
+      firstname,
+      lastname,
       email,
-      phoneNumber
+      phonenumber
     }).save()
     const newReservation = await new GuestReservation ({
       accomodation: newAccomodation,
@@ -107,64 +107,8 @@ app.post("/reservation", async (req, res) => {
   }
 })
 
-// app.post("/accomodation", async (req, res) => {
-//   const { date, roomtype, pax } = req.body
-
-//   try {
-//     const newGuestAccomodation = await new GuestAccomodation ({
-//       date,
-//       roomtype,
-//       pax
-//     }).save() 
-
-//     res.json ({
-//       success: true,
-//       userID: newGuestAccomodation._id,
-//       date: newGuestAccomodation.date,
-//       roomtype: newGuestAccomodation.roomtype,
-//       pax: newGuestAccomodation.pax
-//     })
-
-//   } catch (error) {
-//     res.status(400).json({ success: false, message: "Sorry something went wrong!"})
-//   }
-// })
-
-// app.post("/book", async (req, res) => {
-//   const { firstname, lastname, email, phonenumber } = req.body
-
-//   try {
-//     const newGuestDetails = await new GuestDetails ({
-      
-//       firstname,
-//       lastname,
-//       email,
-//       phonenumber
-//     }).save() 
-
-//     res.json ({
-//       success: true,
-//       userID: newGuestDetails._id,
-//       firstname: newGuestDetails.firstname,
-//       lastname: newGuestDetails.lastname,
-//       email: newGuestDetails.email,
-//       phonenumber: newGuestDetails.phonenumber
-//     })
-
-//   } catch (error) {
-//     res.status(400).json({ success: false, message: "Sorry something went wrong!"})
-//   }
-// })
-
 // Start the server
 app.listen(port, () => {
   // eslint-disable-next-line
   console.log(`Server running on http://localhost:${port}`)
 })
-
-
-// Is an access token needed?
-// accessToken: {
-// type: String,
-//  default: () => crypto.randomBytes(128).toString("hex"),
-// },

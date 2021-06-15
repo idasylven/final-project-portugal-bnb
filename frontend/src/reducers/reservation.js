@@ -10,12 +10,13 @@ const guestreservation = createSlice({
       pax: ''
     },
     details: {
-      firstname: null,
-      lastname: null,
-      email: null,
-      phonenumber: null 
+      firstname: '',
+      lastname: '',
+      email: '',
+      phonenumber: '' 
     },
-    confirmation: {}
+    confirmation: {},
+    errors: null
   },
   reducers: {
     setStartdate: (store, action) => {
@@ -41,6 +42,9 @@ const guestreservation = createSlice({
     },
     setPhonenumber: (store, action) => {
       store.details.phonenumber = action.payload
+    },
+    setErrors: (store, action) => {
+      store.errors = action.payload
     }
   }
 })
