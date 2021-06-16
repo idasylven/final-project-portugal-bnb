@@ -1,5 +1,30 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+  const initialState = localStorage.getItem('guestreservation') ? {
+        // accomodation: JSON.parse(localStorage.getItem('guestreservation')).accomodation,
+        // details: JSON.parse(localStorage.getItem('guestreservation')).details,
+        startdate: JSON.parse(localStorage.getItem('guestreservation')).startdate,
+        enddate: JSON.parse(localStorage.getItem('guestreservation')).enddate,
+        roomtype: JSON.parse(localStorage.getItem('guestreservation')).roomtype,
+        firstname: JSON.parse(localStorage.getItem('guestreservation')).firstname,
+        lastname: JSON.parse(localStorage.getItem('guestreservation')).lastname,
+        email: JSON.parse(localStorage.getItem('guestreservation')).email,
+        phonenumber: JSON.parse(localStorage.getItem('guestreservation')).phonenumner,
+        errors: null
+  }
+  : 
+  {
+        startdate: null,
+        enddate: null,
+        roomtype: null,
+        pax: null,
+        firstname: null,
+        lastname: null,
+        email: null,
+        phonenumber: null,
+        errors: null
+  }
+
 const guestreservation = createSlice({
   name: "guestreservation",
   initialState: {
@@ -48,6 +73,8 @@ const guestreservation = createSlice({
     }
   }
 })
+
+
  
 // KARAN- We are wondering if we need to divide the reducers
 // into two goups according to the initialstate where we have 

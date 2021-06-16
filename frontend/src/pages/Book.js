@@ -56,6 +56,18 @@ fetch(API_URL, options)
       batch(() => {           
         dispatch(reservation.actions.setConfirmation(data))
 
+        localStorage.setItem('guestreservation', JSON.stringify({
+          // accomodation: data.accomodation,
+          // details: data.details,
+          startdate: data.startdate,
+          enddate: data.enddate,
+          roomtype: data.roomtype,
+          pax: data.pax,
+          firstname: data.firstname,
+          lastname: data.lastname,
+          email: data.email,
+          phonenumber: data.phonenumber
+      }));
       })
     } else {
       dispatch(reservation.actions.setErrors(data)) // om ni vill
