@@ -1,6 +1,6 @@
 import React from 'react'
 import "react-dates/initialize"
-import { batch, useDispatch, useSelector } from 'react-redux'
+// import { useDispatch } from 'react-redux'
 import { DateRangePicker } from "react-dates"
 import "react-dates/lib/css/_datepicker.css"
 
@@ -10,7 +10,7 @@ const Datepicker = ({ startDate, setStartDate, endDate, setEndDate }) => {
  
   const [focusedInput, setFocusedInput] = React.useState() //KARAN- Should it be an action like onchange, or similar here?
 
-  const dispatch = useDispatch()
+  // const dispatch = useDispatch()
 
   return (
     <form className="booking-form">
