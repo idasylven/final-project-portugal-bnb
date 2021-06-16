@@ -24,6 +24,17 @@ const Accomodation = () => {
     dispatch(reservation.actions.setStartdate(startDate._d.toString()))
     dispatch(reservation.actions.setEnddate(endDate._d.toString()))
 
+    localStorage.setItem('guestreservation', JSON.stringify({
+
+      startDate: startDate._d.toString(),
+      endDate: endDate._d.toString(),
+      roomType: roomType,
+      pax: pax,
+     
+  })
+
+  )
+
     history.push("/book")
   }
 

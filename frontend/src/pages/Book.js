@@ -28,6 +28,16 @@ const Book = () => {
     dispatch(reservation.actions.setEmail(email))
     dispatch(reservation.actions.setPhonenumber(phoneNumber))
 
+    localStorage.setItem('guestreservation', JSON.stringify({
+      
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      phoneNumber: phoneNumber
+  })
+
+  )
+
     history.push("/confirmation")
   }
 
@@ -55,19 +65,6 @@ fetch(API_URL, options)
     if (data.success) {
       batch(() => {           
         dispatch(reservation.actions.setConfirmation(data))
-
-        localStorage.setItem('guestreservation', JSON.stringify({
-          // accomodation: data.accomodation,
-          // details: data.details,
-          startdate: data.startdate,
-          enddate: data.enddate,
-          roomtype: data.roomtype,
-          pax: data.pax,
-          firstname: data.firstname,
-          lastname: data.lastname,
-          email: data.email,
-          phonenumber: data.phonenumber
-      }));
       })
     } else {
       dispatch(reservation.actions.setErrors(data)) // om ni vill
