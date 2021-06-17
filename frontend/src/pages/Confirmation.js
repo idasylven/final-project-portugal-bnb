@@ -7,8 +7,8 @@ const Confirmation = () => {
   return (
     <div>
       Hello from Confirmation!
-      startdate: {new Date(confirmation.accomodation.startdate).toDateString()}
-      enddate: {new Date(confirmation.accomodation.enddate).toDateString()}
+      startdate: {confirmation.accomodation.startdate}
+      enddate: {confirmation.accomodation.enddate}
       roomtype: {confirmation.accomodation.roomtype}
       number of guests: {confirmation.accomodation.pax}
       first name: {confirmation.details.firstname}

@@ -1,13 +1,16 @@
-import React from 'react'
+// import React, { useState } from 'react'
 
-import './HamburgerMenu.css'
+// import './HamburgerMenu.css'
 
-const HamburgerMenu = () => {
-  return (
-    <div>
-      <label className="navi-toggle">Menu</label>
-    </div>
-  )
-}
+// const HamburgerMenu = () => {
+//   const [click, setClick] = useState(false)
+//   const handleClick = () => setClick(!click)
+//   return (
+//     <div>
+//       <div className="navi-toggle" onClick={handleClick}>Menu</div>
+//       <div className="nav-background" clicked={click}>&nbsp</div>
+//     </div>
+//   )
+// }
 
-export default HamburgerMenu
+// export default HamburgerMenu

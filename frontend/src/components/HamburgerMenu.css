@@ -1,7 +1,24 @@
-.navi-toggle {
+/* .navi-toggle {
   position: fixed;
-  color: rebeccapurple;
+  background-color: #86ed88;
   top: 6rem;
   right: 6rem;
   border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  font-size: 62.5%;
+  cursor: poiner;
+  z-index: 1000;
+  box-shadow: 0 1rem 3rem rgba(182, 237, 200, 0.3);
+  text-align: center;
 }
+
+.nav-background {
+  position: fixed;
+  top: 6.5rem;
+  left: 6.5rem;
+  background-image: radial-gradient(#86ed88, #115b4c);
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+} */

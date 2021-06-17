@@ -1,35 +1,67 @@
 import React from 'react'
-import "react-dates/initialize"
-// import { useDispatch } from 'react-redux'
-import { DateRangePicker } from "react-dates"
-import "react-dates/lib/css/_datepicker.css"
+import DatePicker from 'react-datepicker'
 
-import reservation from '../reducers/reservation'
+import "react-datepicker/dist/react-datepicker.css"
 
 const Datepicker = ({ startDate, setStartDate, endDate, setEndDate }) => {
- 
-  const [focusedInput, setFocusedInput] = React.useState() 
-
-  // const dispatch = useDispatch()
+  // const [startDate, setStartDate] = useState(new Date("2014/02/08"));
+  // const [endDate, setEndDate] = useState(new Date("2014/02/10"));
 
   return (
-    <form className="booking-form">
-      <DateRangePicker
+    <>
+      <DatePicker
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+        selectsStart
         startDate={startDate}
-        startDateId="start-date"
         endDate={endDate}
-        endDateId="end-date"
-        onDatesChange={({ startDate, endDate }) => {
-          // Add a batch to dispatch everything in one go
-         setStartDate(startDate)
-         setEndDate(endDate)
-        }}
-        focusedInput={focusedInput}
-        onFocusChange={(focusedInput) => setFocusedInput(focusedInput)}
       />
-      
-    </form>
+      <DatePicker
+        selected={endDate}
+        onChange={(date) => setEndDate(date)}
+        selectsEnd
+        startDate={startDate}
+        endDate={endDate}
+        minDate={startDate}
+      />
+    </>
   );
-}
+};
 
 export default Datepicker
+
+
+// import "react-dates/initialize"
+// // import { useDispatch } from 'react-redux'
+// import { DateRangePicker } from "react-dates"
+// import "react-dates/lib/css/_datepicker.css"
+
+// import reservation from '../reducers/reservation'
+
+// const Datepicker = ({ startDate, setStartDate, endDate, setEndDate }) => {
+ 
+//   const [focusedInput, setFocusedInput] = React.useState() 
+
+//   // const dispatch = useDispatch()
+
+//   return (
+//     <form className="booking-form">
+//       <DateRangePicker
+//         startDate={startDate}
+//         startDateId="start-date"
+//         endDate={endDate}
+//         endDateId="end-date"
+//         onDatesChange={({ startDate, endDate }) => {
+//           // Add a batch to dispatch everything in one go
+//          setStartDate(startDate)
+//          setEndDate(endDate)
+//         }}
+//         focusedInput={focusedInput}
+//         onFocusChange={(focusedInput) => setFocusedInput(focusedInput)}
+//       />
+      
+//     </form>
+//   );
+// }
+
+// export default Datepicker

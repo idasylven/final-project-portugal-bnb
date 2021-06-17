@@ -14,7 +14,7 @@ const Header = () => {
     <header className="header-container">
       <div className="mob-nav-container">
         <p className="loggo">Casa de Shwee</p>
-        <HamburgerMenu />
+      
       </div>
         <picture>
           <source srcSet="/assets/images/terrace-mobile.jpg" media="(max-width: 767px)"/>

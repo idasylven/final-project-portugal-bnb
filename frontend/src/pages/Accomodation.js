@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 
 import reservation from 'reducers/reservation'
 
-import Datepicker from '../components/Datepicker'
+import Datepicker from 'components/Datepicker'
 import DropdownRoom from '../components/DropdownRoom'
 import DropdownPax from '../components/DropdownPax'
 import Button from '../components/Button'
@@ -21,12 +21,16 @@ const Accomodation = () => {
   const onAccomodationConfirm = () => {
     dispatch(reservation.actions.setRoomtype(roomType))
     dispatch(reservation.actions.setPax(pax))
-    dispatch(reservation.actions.setStartdate(startDate._d.toString()))
-    dispatch(reservation.actions.setEnddate(endDate._d.toString()))
+    dispatch(reservation.actions.setStartdate(startDate.toString()))
+    dispatch(reservation.actions.setEnddate(endDate.toString()))
+    // dispatch(reservation.actions.setStartdate(startDate._d.toString()))
+    // dispatch(reservation.actions.setEnddate(endDate._d.toString()))
 
     localStorage.setItem('guestreservation', JSON.stringify({
-        startDate: startDate._d.toString(),
-        endDate: endDate._d.toString(),
+        startDate: startDate.toString,
+        endDate: endDate.toString,
+        // startDate: startDate._d.toString(),
+        // endDate: endDate._d.toString(),
         roomType: roomType,
         pax: pax,   
       })
