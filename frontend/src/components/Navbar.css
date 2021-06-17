@@ -1,12 +1,22 @@
 /* .nav-container {
 } */
 
-.nav-box {
+/* .nav-box {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
   padding: 1.5rem 10rem 0 10rem;
+} */
+
+.nav-box {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 30px;
 }
 
 a {
@@ -14,6 +24,7 @@ a {
   color: #442e20;
   font-family: Graduate;
   font-size: 35px;
+  padding: 10px;
 }
 
 /* li {
