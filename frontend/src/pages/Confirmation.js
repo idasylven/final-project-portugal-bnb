@@ -2,20 +2,19 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 const Confirmation = () => {
-  const accomodation = useSelector(store => store.guestreservation.accomodation)
-  const details = useSelector(store => store.guestreservation.details)
+  const confirmation = useSelector(store => store.guestreservation.confirmation)
 
   return (
     <div>
       Hello from Confirmation!
-      startdate: {new Date(accomodation.startdate).toDateString()}
-      enddate: {new Date(accomodation.enddate).toDateString()}
-      roomtype: {accomodation.roomtype}
-      number of guests: {accomodation.pax}
-      first name: {details.firstname}
-      last name: {details.lastname}
-      email: {details.email}
-      phone number: {details.phonenumber}
+      startdate: {new Date(confirmation.accomodation.startdate).toDateString()}
+      enddate: {new Date(confirmation.accomodation.enddate).toDateString()}
+      roomtype: {confirmation.accomodation.roomtype}
+      number of guests: {confirmation.accomodation.pax}
+      first name: {confirmation.details.firstname}
+      last name: {confirmation.details.lastname}
+      email: {confirmation.details.email}
+      phone number: {confirmation.details.phonenumber}
     </div>
   )
 }

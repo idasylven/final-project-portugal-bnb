@@ -7,8 +7,6 @@ import reservation from 'reducers/reservation'
 import GuestDetails from '../components/GuestDetails'
 import Button from '../components/Button'
 
-import { API_URL } from '../reuseables/urls'
-
 const Book = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -36,38 +34,8 @@ const Book = () => {
       })
     )
 
-    history.push("/confirmation")
+    history.push("/summary")
   }
-
-  const options = {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({ 
-    startdate: accomodation.startdate,
-    enddate: accomodation.enddate, 
-    roomtype: accomodation.roomtype, 
-    pax: accomodation.pax, 
-    firstname: details.firstname, 
-    lastname: details.lastname, 
-    email:details.email, 
-    phonenumber: details.phonenumber 
-  })
-}
-
-fetch(API_URL, options)
-  .then(res => res.json())
-  .then(data => {
-    console.log(data)
-    if (data.success) {
-      batch(() => {           
-        dispatch(reservation.actions.setConfirmation(data))
-      })
-    } else {
-      dispatch(reservation.actions.setErrors(data))
-    }
-  })
 
   return (
     <div>
@@ -77,7 +45,7 @@ fetch(API_URL, options)
         email={email} setEmail={setEmail} 
         phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
       />
-      <Button handleClick={onBookConfirm} label="Book" />
+      <Button handleClick={onBookConfirm} label="See summary" />
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { RiFacebookFill } from 'react-icons/ri'
 import { GrInstagram } from 'react-icons/gr'
 import { GoThreeBars } from 'react-icons/go'
 
+import HamburgerMenu from './HamburgerMenu'
 import Navbar from './Navbar'
 
 import './Header.css'
@@ -13,7 +14,7 @@ const Header = () => {
     <header className="header-container">
       <div className="mob-nav-container">
         <p className="loggo">Casa de Shwee</p>
-        <GoThreeBars />
+        <HamburgerMenu />
       </div>
         <picture>
           <source srcSet="/assets/images/terrace-mobile.jpg" media="(max-width: 767px)"/>
@@ -36,3 +37,5 @@ export default Header
 // <p>Casa de Shwee</p>
 // </div>
 // </div>
+
+//   <GoThreeBars />

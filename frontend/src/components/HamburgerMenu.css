@@ -1,0 +1,7 @@
+.navi-toggle {
+  position: fixed;
+  color: rebeccapurple;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+}

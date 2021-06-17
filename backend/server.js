@@ -16,11 +16,11 @@ mongoose.Promise = Promise
 
 const GuestAccomodation = mongoose.model("GuestAccomodation", {
   startdate: {
-    type: Number, 
+    type: String, 
     required: true,
   },
   enddate: {
-    type: Number, 
+    type: String, 
     required: true,
   },
   roomtype: {

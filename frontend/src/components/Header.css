@@ -7,15 +7,8 @@
   position: absolute;
 }
 
-.nav-box {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  margin: 0;
-  padding: 30px;
-}
-
 .header-container {
+  box-sizing: border-box;
   height: 80vh;
   width: 100%;
   border: solid black 2px;

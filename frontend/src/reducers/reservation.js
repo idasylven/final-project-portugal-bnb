@@ -64,7 +64,7 @@ const guestreservation = createSlice({
       store.errors = action.payload
     },
     setConfirmation: (store, action) => {
-      store.confirmation = action.payload
+      store.confirmation = action.payload.newReservation
     }
   }
 })
