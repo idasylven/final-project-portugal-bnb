@@ -25,23 +25,25 @@ const Accomodation = () => {
     dispatch(reservation.actions.setEnddate(endDate._d.toString()))
 
     localStorage.setItem('guestreservation', JSON.stringify({
-
-      startDate: startDate._d.toString(),
-      endDate: endDate._d.toString(),
-      roomType: roomType,
-      pax: pax,
-     
-  })
-
-  )
+        startDate: startDate._d.toString(),
+        endDate: endDate._d.toString(),
+        roomType: roomType,
+        pax: pax,   
+      })
+    )
 
     history.push("/book")
   }
 
   return (
     <div>
-      <Datepicker startDate={startDate} setStartDate={setStartDate} endDate={endDate} setEndDate={setEndDate}/>
-      <DropdownRoom roomType={roomType} setRoomType={ setRoomType}/>
+      <Datepicker 
+        startDate={startDate} 
+        setStartDate={setStartDate} 
+        endDate={endDate} 
+        setEndDate={setEndDate}
+      />
+      <DropdownRoom roomType={roomType} setRoomType={setRoomType}/>
       <DropdownPax pax={pax} setPax={setPax}/>
       <Button handleClick={onAccomodationConfirm} label="Check availability"/>
     </div>

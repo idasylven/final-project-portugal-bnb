@@ -18,7 +18,7 @@ const Header = () => {
         <picture>
           <source srcSet="/assets/images/terrace-mobile.jpg" media="(max-width: 767px)"/>
           <source srcSet="/assets/images/terrace-tablet.jpg" media="(max-width: 1024px)"/>
-          <img className="hero-image" src="/assets/images/terrace-desktop.jpg" alt="Hero Image"/>
+          <img className="hero-image" src="/assets/images/terrace-desktop.jpg" alt="Hero background"/>
         </picture>
      <Navbar />
     </header>

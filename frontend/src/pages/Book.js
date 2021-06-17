@@ -16,7 +16,7 @@ const Book = () => {
   const [phoneNumber, setPhoneNumber] = useState('')
 
   const accomodation = useSelector(store => store.guestreservation.accomodation)
-  const details = useSelector(store => store.guestreservation.details) // Om den klagar på undefined just nu, ta bort den
+  const details = useSelector(store => store.guestreservation.details)
   console.log(accomodation)
 
   const history = useHistory()
@@ -29,14 +29,12 @@ const Book = () => {
     dispatch(reservation.actions.setPhonenumber(phoneNumber))
 
     localStorage.setItem('guestreservation', JSON.stringify({
-      
-      firstName: firstName,
-      lastName: lastName,
-      email: email,
-      phoneNumber: phoneNumber
-  })
-
-  )
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phoneNumber: phoneNumber
+      })
+    )
 
     history.push("/confirmation")
   }
@@ -55,7 +53,7 @@ const Book = () => {
     lastname: details.lastname, 
     email:details.email, 
     phonenumber: details.phonenumber 
-  }) // Key ska heta som i server.js, value ska heta som i reservation.js
+  })
 }
 
 fetch(API_URL, options)
@@ -67,7 +65,7 @@ fetch(API_URL, options)
         dispatch(reservation.actions.setConfirmation(data))
       })
     } else {
-      dispatch(reservation.actions.setErrors(data)) // om ni vill
+      dispatch(reservation.actions.setErrors(data))
     }
   })
 

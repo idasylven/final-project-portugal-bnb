@@ -8,7 +8,7 @@ import reservation from '../reducers/reservation'
 
 const Datepicker = ({ startDate, setStartDate, endDate, setEndDate }) => {
  
-  const [focusedInput, setFocusedInput] = React.useState() //KARAN- Should it be an action like onchange, or similar here?
+  const [focusedInput, setFocusedInput] = React.useState() 
 
   // const dispatch = useDispatch()
 
