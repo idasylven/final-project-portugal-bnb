@@ -28,7 +28,7 @@ import { createSlice } from '@reduxjs/toolkit'
         email: null,
         phonenumber: null,
       },
-      confirmation: {},
+      confirmation: null,
       errors: null
   }
 

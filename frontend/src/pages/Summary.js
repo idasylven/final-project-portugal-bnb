@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector, useDispatch, batch } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 
-import { API_URL } from 'reuseables/urls'
+import { API_URL } from 'reusables/urls'
 
 import guestreservation from 'reducers/reservation'
 

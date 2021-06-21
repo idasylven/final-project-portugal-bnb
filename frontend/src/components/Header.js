@@ -1,7 +1,6 @@
 import React from 'react'
 import { RiFacebookFill } from 'react-icons/ri'
 import { GrInstagram } from 'react-icons/gr'
-import { GoThreeBars } from 'react-icons/go'
 
 import HamburgerMenu from './HamburgerMenu'
 import Navbar from './Navbar'
@@ -13,8 +12,16 @@ const Header = () => {
   return (
     <header className="header-container">
       <div className="mob-nav-container">
-        <p className="loggo">Casa de Shwee</p>
-      
+        <div className="loggo">
+          <p className="loggo-text">CASA DE SWHEE</p>
+        </div>
+        <HamburgerMenu />
+      <div className="social-media-container">
+        <div className="social-media-icons">
+          <GrInstagram />
+          <RiFacebookFill />
+        </div>
+      </div>  
       </div>
         <picture>
           <source srcSet="/assets/images/terrace-mobile.jpg" media="(max-width: 767px)"/>
@@ -27,15 +34,3 @@ const Header = () => {
 }
 
 export default Header
-
-//   <div className="social-media-container">
-// <RiFacebookFill />
-// <GrInstagram />
-// </div>
-// <div className="header-box">
-// <div className="loggo">
-// <p>Casa de Shwee</p>
-// </div>
-// </div>
-
-//   <GoThreeBars />

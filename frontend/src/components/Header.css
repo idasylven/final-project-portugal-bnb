@@ -5,6 +5,8 @@
 
 .mob-nav-container {
   position: absolute;
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 .header-container {
@@ -12,6 +14,35 @@
   height: 80vh;
   width: 100%;
   border: solid black 2px;
+  direction: rtl;
+}
+
+.loggo {
+  background-color: #edc0a7;
+  border: solid 2px #442e20;
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  transform: rotate(24deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 7px 0 0;
+}
+
+.loggo-text {
+  font-size: 5px;
+}
+
+.social-media-container {
+  position: absolute;
+  top: 215px;
+  right: 310px;
+}
+
+.social-media-icons {
+  display: flex;
+  color: white;
 }
 
 /* .header-box {
@@ -28,17 +59,6 @@
   object-fit: contain;
 } */
 
-/* .loggo {
-  background-color: #edc0a7;
-  border: solid 2px #442e20;
-  border-radius: 50%;
-  height: 350px;
-  width: 350px;
-  position: relative;
-  top: 190px;
-  left: 860px;
-}
-
-.social-media-container {
+/* .social-media-container {
   position: absolute;
 } */
