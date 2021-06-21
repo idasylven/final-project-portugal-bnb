@@ -24,7 +24,7 @@ export const SidebarData = [
     className: "nav-text"
   },
   {
-    title: "About",
+    title: "About us",
     path: "/about",
     icon: <FaMapSigns />,
     className: "nav-text"

@@ -8,6 +8,7 @@ import Datepicker from 'components/Datepicker'
 import DropdownRoom from '../components/DropdownRoom'
 import DropdownPax from '../components/DropdownPax'
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 
 const Accomodation = () => {
   const [roomType, setRoomType] = useState('')
@@ -46,6 +47,7 @@ const Accomodation = () => {
       <DropdownRoom roomType={roomType} setRoomType={setRoomType}/>
       <DropdownPax pax={pax} setPax={setPax}/>
       <Button handleClick={onAccomodationConfirm} label="Check availability"/>
+      <Footer />
     </div>
   )
 }

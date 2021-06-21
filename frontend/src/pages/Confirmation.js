@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { useHistory } from 'react-router-dom'
 
+import Footer from '../components/Footer'
+
 const Confirmation = () => {
   const confirmation = useSelector(store => store.guestreservation.confirmation)
 
@@ -11,7 +13,7 @@ const Confirmation = () => {
     if (!confirmation) {
       history.push('/accomodation')
     }
-  },[])
+  },[confirmation, history]) //Remove from array of dependecy?
 
 if (confirmation) {
   return (
@@ -25,6 +27,7 @@ if (confirmation) {
      last name: {confirmation.details.lastname}
      email: {confirmation.details.email}
      phone number: {confirmation.details.phonenumber}
+     <Footer />
    </div>
  )
 } else {

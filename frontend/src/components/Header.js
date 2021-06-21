@@ -18,8 +18,8 @@ const Header = () => {
         <HamburgerMenu />
       <div className="social-media-container">
         <div className="social-media-icons">
-          <GrInstagram />
-          <RiFacebookFill />
+          <a className="social-media-links" href="https://www.instagram.com/"><GrInstagram /></a>
+          <a className="social-media-links" href="https://www.facebook.com/"><RiFacebookFill /></a>
         </div>
       </div>  
       </div>

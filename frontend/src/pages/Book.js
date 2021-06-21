@@ -6,6 +6,7 @@ import reservation from 'reducers/reservation'
 
 import GuestDetails from '../components/GuestDetails'
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 
 const Book = () => {
   const [firstName, setFirstName] = useState('')
@@ -46,6 +47,7 @@ const Book = () => {
         phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
       />
       <Button handleClick={onBookConfirm} label="See summary" />
+      <Footer />
     </div>
   )
 }

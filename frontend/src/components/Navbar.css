@@ -6,10 +6,9 @@
   list-style-type: none;
   display: none;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
+  text-align: end;
   margin: 0;
-  padding: 30px;
+  padding: 70px 0px 30px 60px;
 }
 
 a {
@@ -18,4 +17,37 @@ a {
   font-family: Graduate;
   font-size: 35px;
   padding: 10px;
+}
+
+.nav-links {
+  padding-bottom: 35px;
+}
+
+.loggo-desktop {
+  background-color: #edc0a7;
+  border: solid 2px #442e20;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  transform: rotate(24deg);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 7px 0 0;
+}
+
+.loggo-text-desktop {
+  font-size: 28px;
+  font-family: Graduate;
+  color: #442e20;
+}
+
+@media (min-width: 768px) {
+  .nav-box {
+    display: flex;
+  }
+
+  .loggo-desktop {
+    display: flex;
+  }
 }

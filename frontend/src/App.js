@@ -14,8 +14,6 @@ import Confirmation from './pages/Confirmation'
 import Error from './pages/Error'
 import Home from './pages/Home'
 
-import Navbar from './components/Navbar'
-
 const reducer = combineReducers({
   guestreservation: guestreservation.reducer
 })

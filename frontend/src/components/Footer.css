@@ -1,0 +1,14 @@
+.footer-container {
+  width: 100vw;
+  height: 15vh;
+  background-color: #a5331abf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: Graduate;
+  color: #442e20;
+  margin: 0;
+}

@@ -7,6 +7,7 @@ import { API_URL } from 'reusables/urls'
 import guestreservation from 'reducers/reservation'
 
 import Button from '../components/Button'
+import Footer from '../components/Footer'
 
 const Summary = () => {
   const accomodation = useSelector(store => store.guestreservation.accomodation)
@@ -64,6 +65,7 @@ const Summary = () => {
         phone number: {details.phonenumber}
       </div>
       <Button handleClick={onBookConfirm} label="Book" />
+      <Footer />
     </>
   )
 }
