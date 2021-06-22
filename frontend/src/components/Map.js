@@ -8,7 +8,7 @@ const Map = () => {
   return (
     <>
     <GoogleMap 
-      defaultZoom={10}
+      defaultZoom={12}
       defaultCenter={{ lat: 37.101910, lng:-8.673240 }}
       defaultOptions={{ styles: MapStyles }}
     />
@@ -16,12 +16,12 @@ const Map = () => {
       position={{ lat: 37.101910, lng:-8.673240 }} 
       name={'Casa de Shwee'}
       title={'Casa de Shwee'}
-      icon={{ url: './assets/images/home-button.svg', scaledSize: new window.google.maps.Size(25,25)}}
+      icon={{ url: './assets/images/home-location.svg', scaledSize: new window.google.maps.Size(40,40)}}
     />
-    <Marker 
+    {/* <Marker 
       position={{ lat: 37.086680, lng:-8.668900 }} 
       icon={{ url: './assets/images/swimming.svg', scaledSize: new window.google.maps.Size(25,25)}}
-    />
+    /> */}
     </>
   )
 }
@@ -30,7 +30,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map))
 
 const CustomMap = () => {
   return (
-    <div style={{ width: "70vw", height: "70vh"}}>
+    <div className="map-container">
       <WrappedMap 
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&
         libraries=geometry,drawing,places&key=AIzaSyCOUeTGU1MZnvJOJQel83CGcExArJEW0i4`} 
