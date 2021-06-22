@@ -32,6 +32,8 @@
 
 .loggo-text {
   font-size: 5px;
+  font-family: Graduate;
+  color: #442e20;
 }
 
 .social-media-container {
@@ -62,6 +64,10 @@
   background-color: #edc0a7b3;
 }
 
+.social-media-icons svg:hover {
+  color: #8e9c8bd6;
+}
+
 @media (min-width: 768px) {
   .loggo,
   .loggo-text {
@@ -78,5 +84,41 @@
   .social-media-container {
     top: 400px;
     right: 545px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loggo {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 100px 135px 0 0;
+  }
+
+  .loggo-text {
+    display: flex;
+    font-size: 26px;
+  }
+
+  .social-media-container {
+    top: 565px;
+    right: 735px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loggo {
+    width: 350px;
+    height: 350px;
+    margin: 190px 210px 0 0;
+  }
+
+  .loggo-text {
+    font-size: 32px;
+  }
+
+  .social-media-container {
+    top: 820px;
+    right: 1120px;
   }
 }

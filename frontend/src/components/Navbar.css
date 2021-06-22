@@ -21,6 +21,11 @@ a {
   padding: 10px;
 }
 
+a:hover {
+  border-bottom: 3px solid #b88e71;
+  border-radius: 5px;
+}
+
 .nav-links {
   padding-bottom: 60px;
 }
