@@ -16,16 +16,28 @@ const Map = () => {
       defaultOptions={{ styles: MapStyles }}
     />
     <Marker 
-      position={{ lat: 37.101910, lng:-8.673240 }} 
+      position={{ lat: 37.094990, lng:-8.682140 }} 
       name={'Casa de Shwee'}
       title={'Casa de Shwee'}
-      label={markerLabel}
-      icon={{ url: './assets/images/home-location.svg', scaledSize: new window.google.maps.Size(40,40)}}
+      // label={markerLabel}
+      icon={{ url: './assets/icons/home-location.svg', scaledSize: new window.google.maps.Size(50,50)}}
     />
-    {/* <Marker 
-      position={{ lat: 37.086680, lng:-8.668900 }} 
-      icon={{ url: './assets/images/swimming.svg', scaledSize: new window.google.maps.Size(25,25)}}
-    /> */}
+    <Marker 
+      position={{ lat: 37.091680, lng:-8.667900 }} 
+      icon={{ url: './assets/icons/beach-umbrella.svg', scaledSize: new window.google.maps.Size(25,25)}}
+    />
+    <Marker 
+      position={{ lat: 37.103198, lng:-8.646945 }} 
+      icon={{ url: './assets/icons/boat.svg', scaledSize: new window.google.maps.Size(25,25)}}
+    />
+    <Marker 
+      position={{ lat: 37.082523, lng:-8.668981 }} 
+      icon={{ url: './assets/icons/hiking.svg', scaledSize: new window.google.maps.Size(25,25)}}
+    />
+     <Marker 
+      position={{ lat: 37.079400, lng:-8.691796 }} 
+      icon={{ url: './assets/icons/surfing.svg', scaledSize: new window.google.maps.Size(25,25)}}
+    />
     </>
   )
 }
@@ -48,6 +60,5 @@ const CustomMap = () => {
 
 export default CustomMap
 
-// hide the API key
+// restrict the API key
 // Get correct coodrinates for the house
-// ${process.env.REACT_APP_GOOGLE_KEY}
