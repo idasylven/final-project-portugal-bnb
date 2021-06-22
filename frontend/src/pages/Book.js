@@ -39,16 +39,24 @@ const Book = () => {
   }
 
   return (
-    <div>
-      <GuestDetails 
-        firstName={firstName} setFirstName={setFirstName} 
-        lastName={lastName} setLastName={setLastName} 
-        email={email} setEmail={setEmail} 
-        phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
-      />
-      <Button handleClick={onBookConfirm} label="See summary" />
+    <>
+      <section className="book-container">
+      <p className="book-welcome-text">Yeay! Its available
+        Please fill in the details and come hang with us!</p>
+        <div className="book-box">
+          <div className="book-details">
+            <GuestDetails 
+              firstName={firstName} setFirstName={setFirstName} 
+              lastName={lastName} setLastName={setLastName} 
+              email={email} setEmail={setEmail} 
+              phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
+            />
+          </div>
+          <Button handleClick={onBookConfirm} label="See summary" />
+        </div>
+      </section>
       <Footer />
-    </div>
+     </>
   )
 }
 

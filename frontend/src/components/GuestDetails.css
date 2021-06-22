@@ -1,0 +1,10 @@
+.guestdetails-box {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 10px;
+  background: #edbfa797;
+  height: 30px;
+}
