@@ -1,5 +1,6 @@
 .nav-container {
   box-sizing: border-box;
+  display: none;
 }
 
 .nav-box {
@@ -8,7 +9,8 @@
   flex-direction: column;
   text-align: end;
   margin: 0;
-  padding: 70px 0px 30px 60px;
+  padding: 55px 0 40px 100px;
+  width: 50%;
 }
 
 a {
@@ -20,7 +22,12 @@ a {
 }
 
 .nav-links {
-  padding-bottom: 35px;
+  padding-bottom: 60px;
+}
+
+.loggo-desktop-container {
+  width: 50%;
+  padding: 40px 10px 0 0;
 }
 
 .loggo-desktop {
@@ -33,7 +40,7 @@ a {
   display: none;
   justify-content: center;
   align-items: center;
-  margin: 16px 7px 0 0;
+  margin: 16px 70px 0 0;
 }
 
 .loggo-text-desktop {
@@ -43,11 +50,43 @@ a {
 }
 
 @media (min-width: 768px) {
+  .nav-container {
+    display: flex;
+  }
+
   .nav-box {
     display: flex;
   }
 
   .loggo-desktop {
     display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  .loggo-desktop-container {
+    display: none;
+  }
+
+  .loggo-desktop {
+    display: none;
+  }
+
+  .nav-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 0 0 0;
+  }
+
+  a {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  a {
+    font-size: 40px;
   }
 }

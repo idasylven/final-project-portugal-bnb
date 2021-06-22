@@ -10,6 +10,8 @@ import DropdownPax from '../components/DropdownPax'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 
+import './Accomodation.css'
+
 const Accomodation = () => {
   const [roomType, setRoomType] = useState('')
   const [pax, setPax] = useState('')
@@ -37,18 +39,28 @@ const Accomodation = () => {
   }
 
   return (
-    <div>
-      <Datepicker 
-        startDate={startDate} 
-        setStartDate={setStartDate} 
-        endDate={endDate} 
-        setEndDate={setEndDate}
-      />
-      <DropdownRoom roomType={roomType} setRoomType={setRoomType}/>
-      <DropdownPax pax={pax} setPax={setPax}/>
-      <Button handleClick={onAccomodationConfirm} label="Check availability"/>
+    <>
+      <div className="acc-container">
+        <div className="datepicker">
+        <Datepicker 
+          startDate={startDate} 
+          setStartDate={setStartDate} 
+          endDate={endDate} 
+          setEndDate={setEndDate}
+        />
+        </div>
+        <div className="dd-room">
+          <DropdownRoom  roomType={roomType} setRoomType={setRoomType}/>
+        </div>
+        <div className="dd-pax">
+          <DropdownPax  pax={pax} setPax={setPax}/>
+        </div>
+        <div className="btn-acc">
+          <Button handleClick={onAccomodationConfirm} label="Check availability"/>
+        </div>
+      </div>
       <Footer />
-    </div>
+    </>
   )
 }
 

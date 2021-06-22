@@ -1,9 +1,11 @@
 import React from 'react'
 
+
+
 const DropdownPax = ({ pax, setPax }) => {
 
   return (
-    <div>
+    <div className="dd-room">
     
       <label>Nr of guests</label>
       <select

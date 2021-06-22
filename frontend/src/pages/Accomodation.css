@@ -1,0 +1,39 @@
+.acc-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 100vw;
+}
+
+.datepicker {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+
+.dd-room {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.dd-pax {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+label {
+  padding: 10px;
+}
+
+.btn-acc {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  height: 40px;
+  width: 100px;
+}
