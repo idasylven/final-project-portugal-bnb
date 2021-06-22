@@ -8,6 +8,8 @@ import GuestDetails from '../components/GuestDetails'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 
+import './Book.css'
+
 const Book = () => {
   const [firstName, setFirstName] = useState('')
   const [lastName, setLastName] = useState('')
@@ -52,7 +54,7 @@ const Book = () => {
               phoneNumber={phoneNumber} setPhoneNumber={setPhoneNumber}
             />
           </div>
-          <Button handleClick={onBookConfirm} label="See summary" />
+          <Button handleClick={onBookConfirm} label="Next" />
         </div>
       </section>
       <Footer />
