@@ -40,8 +40,57 @@ const Accomodation = () => {
 
   return (
     <>
+         <picture>
+          <source srcSet="/assets/images/alley.jpg" media="(max-width: 767px)"/>
+          <source srcSet="/assets/images/alley.jpg" media="(max-width: 1024px)"/>
+          <img className="hero-image" src="/assets/images/alley.jpg" alt="Hero background"/>
+         </picture>
+         <p className="acc-welcome-text">
+          Casa de Shwee wanna welcome you to the gem of Portugal.
+            See what room
+            that connects with you!
+        </p>
+        <p>
+          OUR ROOMS
+        </p>
+        <section className="room-container">
+          <div className="room-box">
+            <p className="room-description">
+              Serenity boost
+              Swirl into our room of tranquility and 
+              enjoy the inspiring calmness to fill your spirit
+            </p>
+            <img className="room-pics" src="/assets/images/cactus.jpg" alt="bedroom pic"/>
+          </div>
+          <div className="room-box">
+            <p className="room-description">
+              Leafy green
+              Enter our room of hope and joy, feel the freshness and 
+              motivation to take on a new start
+            </p>
+            <img className="room-pics" src="/assets/images/cactus.jpg" alt="bedroom pic"/>
+          </div>
+          <div className="room-box">
+            <p className="room-description">
+              Ocean flow
+              Dive down in our room filled with the force of waves, 
+              move with the rythm of water to keep floating
+            </p>
+            <img className="room-pics" src="/assets/images/cactus.jpg" alt="bedroom pic"/>
+          </div>
+          <div className="room-box">
+            <p className="room-description">
+              Forest feels
+              Stroll into our room of woodland and let the 
+              nature enfold and re energize your soul
+            </p>
+            <img className="room-pics" src="/assets/images/cactus.jpg" alt="bedroom pic"/>
+          </div>
+        </section>
       <div className="acc-container">
+      <p>Start your reservation</p>
         <div className="datepicker">
+        <p>Check In</p>
         <Datepicker 
           startDate={startDate} 
           setStartDate={setStartDate} 
