@@ -1,13 +1,15 @@
 import React from 'react'
 
+import Header from 'components/Header'
 import Footer from '../components/Footer'
 
 const Activities = () => {
   return (
-    <div>
+    <>
+      <Header />
       Hello from Activities!
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -21,14 +21,6 @@ a {
   padding: 10px;
 }
 
-/* a:hover {
-  border-bottom: 3px solid #b88e71;
-} */
-
-/* .nav-links {
-  padding-bottom: 60px;
-} */
-
 .nav-links:after {
   content: "";
   display: block;
@@ -72,10 +64,16 @@ a {
 @media (min-width: 768px) {
   .nav-container {
     display: flex;
+    flex-direction: row-reverse;
   }
 
   .nav-box {
     display: flex;
+    text-align: start;
+  }
+
+  .nav-links {
+    margin-bottom: 35px;
   }
 
   .loggo-desktop {
@@ -84,6 +82,10 @@ a {
 }
 
 @media (min-width: 1024px) {
+  .nav-container {
+    display: flex;
+  }
+
   .loggo-desktop-container {
     display: none;
   }
@@ -94,7 +96,7 @@ a {
 
   .nav-box {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: center;
     width: 100%;
     padding: 50px 0 50px 0;

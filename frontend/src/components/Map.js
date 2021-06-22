@@ -1,9 +1,12 @@
 import React from 'react'
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
+import { BiColorFill } from 'react-icons/bi'
 
 import MapStyles from './MapStyles'
 
 const Map = () => {
+
+  const markerLabel ='Casa de Shwee'
 
   return (
     <>
@@ -16,6 +19,7 @@ const Map = () => {
       position={{ lat: 37.101910, lng:-8.673240 }} 
       name={'Casa de Shwee'}
       title={'Casa de Shwee'}
+      label={markerLabel}
       icon={{ url: './assets/images/home-location.svg', scaledSize: new window.google.maps.Size(40,40)}}
     />
     {/* <Marker 

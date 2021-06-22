@@ -14,6 +14,9 @@
   /* height: 80vh; */
   width: 100%;
   /* border: solid black 2px; */
+}
+
+.mob-hamb-loggo-container {
   direction: rtl;
 }
 

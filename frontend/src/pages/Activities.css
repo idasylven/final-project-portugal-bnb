@@ -1,26 +1,21 @@
-.map-container {
-  width: 100vw;
-  height: 50vh;
-}
-
-.about-text {
+.act-text {
   padding: 20px;
 }
 
-.about-img {
+.act-img {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .about-img {
+  .act-img {
     width: 50%;
   }
 
-  .about-box-left {
+  .act-box-left {
     display: flex;
   }
 
-  .about-box-right {
+  .act-box-right {
     display: flex;
     flex-direction: row-reverse;
   }
