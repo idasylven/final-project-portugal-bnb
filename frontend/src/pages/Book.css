@@ -1,9 +1,5 @@
 .book-container {
-  background-image: url(/assets/images/hanging.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,10 +11,12 @@
   width: 70%;
   height: 100px;
   text-align: center;
+  font-family: Graduate;
+  font-size: 18px;
+  margin-top: 35px;
 }
 
 .book-box {
-  border: solid white 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +25,7 @@
 }
 
 .book-details {
-  border: solid red 1px;
+  border: solid #452e21 1px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,5 +35,44 @@
 }
 
 button {
-  background: #edbfa797;
+  height: 40px;
+  width: 100px;
+  background: #c3b19c;
+  border-radius: 3px;
+  font-family: Loggo-font;
+  font-size: 50px;
+  color: #452e21;
+  letter-spacing: 2px;
+  border-style: none;
+  box-shadow: 3px 3px 3px #452e21;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .book-welcome-text {
+    font-size: 22px;
+  }
+
+  .guestdetails-box {
+    width: 50%;
+  }
+
+  .book-details {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .book-welcome-text {
+    font-size: 27px;
+    width: 50%;
+  }
+
+  .guestdetails-box {
+    width: 50%;
+  }
+
+  .book-details {
+    width: 80%;
+  }
 }

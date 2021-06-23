@@ -2,3 +2,60 @@
   box-sizing: border-box;
   width: 100%;
 }
+
+.welcome-text-wrapper {
+  display: flex;
+  justify-content: center;
+  border: solid #452e21 1px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.welcome-text {
+  font-family: Roboto Mono;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #452e21;
+  margin: 0;
+}
+
+.loggo-name {
+  margin: 0;
+  margin-right: 10px;
+  font-family: Loggo-font;
+  font-size: 55px;
+}
+
+.pink-street-img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 768px) {
+  .loggo-name {
+    font-size: 65px;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+  }
+
+  .welcome-text-wrapper {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .loggo-name {
+    font-size: 75px;
+    margin-right: 15px;
+  }
+
+  .welcome-text {
+    font-size: 25px;
+  }
+
+  .welcome-text-wrapper {
+    padding: 20px;
+  }
+}

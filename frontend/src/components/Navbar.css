@@ -61,9 +61,12 @@ a {
 }
 
 .loggo-text-desktop {
-  font-size: 28px;
-  font-family: Graduate;
   color: #442e20;
+  font-family: Loggo-font;
+  font-size: 100px;
+  padding: 59px;
+  text-align: center;
+  font-weight: unset;
 }
 
 @media (min-width: 768px) {

@@ -40,9 +40,11 @@
 }
 
 .loggo-text {
-  font-size: 5px;
-  font-family: Graduate;
+  font-size: 20px;
+  font-family: Loggo-font;
   color: #442e20;
+  padding: 12px;
+  text-align: center;
 }
 
 .social-media-container {
@@ -106,7 +108,10 @@
 
   .loggo-text {
     display: flex;
-    font-size: 26px;
+    font-family: Loggo-font;
+    font-size: 100px;
+    padding: 59px;
+    text-align: center;
   }
 
   .social-media-container {
@@ -123,7 +128,7 @@
   }
 
   .loggo-text {
-    font-size: 32px;
+    font-size: 143px;
   }
 
   .social-media-container {

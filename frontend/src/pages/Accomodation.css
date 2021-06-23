@@ -7,6 +7,12 @@
   z-index: 1;
 }
 
+.room-hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .acc-welcome-text {
   height: 85px;
   width: 200px;
@@ -33,11 +39,14 @@
   justify-content: center;
 }
 
-.room-mob-heading {
-  font-family: Graduate;
+.room-hero-heading {
+  font-family: Loggo-font;
   color: #452e21;
-  margin-left: 20px;
-  margin-bottom: 28px;
+  position: absolute;
+  font-size: 80px;
+  letter-spacing: 3px;
+  background: #eeeeee96;
+  padding: 0 10px;
 }
 
 .room-heading {
@@ -191,7 +200,65 @@
     flex-direction: row-reverse;
   }
 
-  .room-mob-heading {
-    display: none;
+  .room-hero-heading {
+    font-size: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .room-hero-heading {
+    font-size: 215px;
+  }
+
+  .room-heading {
+    font-size: 32px;
+    margin: 0;
+  }
+
+  .room-text {
+    font-size: 26px;
+  }
+
+  .room-wrapper {
+    padding: 30px;
+  }
+
+  .acc-heading {
+    font-size: 35px;
+  }
+
+  .dates-container {
+    width: 125px;
+    font-size: 22px;
+  }
+
+  input {
+    width: 170px;
+    height: 40px;
+  }
+
+  .dd-room label {
+    font-size: 22px;
+  }
+
+  .dd-pax label {
+    font-size: 22px;
+  }
+
+  .dd-room select {
+    width: 170px;
+    height: 40px;
+  }
+
+  .dd-pax select {
+    width: 170px;
+    height: 40px;
+    margin-right: 30px;
+  }
+
+  .btn-acc button {
+    height: 50px;
+    width: 130px;
+    font-size: 60px;
   }
 }

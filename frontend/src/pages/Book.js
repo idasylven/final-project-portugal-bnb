@@ -42,9 +42,15 @@ const Book = () => {
 
   return (
     <>
+        <picture className="room-hero-container">
+         <h1 className="room-hero-heading">HANG WITH US</h1>
+          <source srcSet="/assets/images/hanging.jpg" media="(max-width: 767px)"/>
+          <source srcSet="/assets/images/hanging.jpg" media="(max-width: 1024px)"/>
+          <img className="hero-image" src="/assets/images/hanging.jpg" alt="Hero background"/>
+        </picture>
       <section className="book-container">
-      <p className="book-welcome-text">Yeay! Its available
-        Please fill in the details and come hang with us!</p>
+      <p className="book-welcome-text">Yeay! It's available.
+        Please fill in the details and press next to continue!</p>
         <div className="book-box">
           <div className="book-details">
             <GuestDetails 

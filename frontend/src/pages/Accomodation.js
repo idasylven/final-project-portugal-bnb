@@ -15,6 +15,7 @@ import HamburgerMenu from 'components/HamburgerMenu'
 
 
 import './Accomodation.css'
+import { RiFacebookFill } from 'react-icons/ri'
 
 const Accomodation = () => {
   const [roomType, setRoomType] = useState('')
@@ -50,7 +51,8 @@ const Accomodation = () => {
         </div>
         </div>
        
-         <picture>
+         <picture className="room-hero-container">
+         <h1 className="room-hero-heading">OUR ROOMS</h1>
           <source srcSet="/assets/images/alley.jpg" media="(max-width: 767px)"/>
           <source srcSet="/assets/images/alley.jpg" media="(max-width: 1024px)"/>
           <img className="hero-image" src="/assets/images/alley.jpg" alt="Hero background"/>
@@ -60,11 +62,10 @@ const Accomodation = () => {
        
         <section className="room-container">
         
-        <h1 className="room-mob-heading">OUR ROOMS</h1>
       
         <div className="room-box-left">
             <div className="room-wrapper">
-              <h4 className="room-heading">Serenity Boost <GiBranchArrow size={30} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
+              <h4 className="room-heading">Serenity Boost <GiBranchArrow size={45} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
               
               <p className="room-text">
               Swirl into our room of tranquility and 
@@ -75,7 +76,7 @@ const Accomodation = () => {
 
           <div className="room-box-right">
             <div className="room-wrapper">
-              <h4 className="room-heading">Leafy Green <GiBranchArrow size={30} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
+              <h4 className="room-heading">Leafy Green <GiBranchArrow size={45} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
               <p className="room-text">
               Enter our room of hope and joy, feel the freshness and 
               motivation to take on a new start</p>
@@ -85,7 +86,7 @@ const Accomodation = () => {
 
           <div className="room-box-left">
             <div className="room-wrapper">
-            <h4 className="room-heading">Ocean Flow <GiBranchArrow size={30} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
+            <h4 className="room-heading">Ocean Flow <GiBranchArrow size={45} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
               <p className="room-text">
               Dive down in our room filled with the force of waves, 
               move with the rythm of water to keep floating</p>
@@ -95,7 +96,7 @@ const Accomodation = () => {
 
           <div className="room-box-right">
             <div className="room-wrapper">
-            <h4 className="room-heading">Forest Feels <GiBranchArrow size={30} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
+            <h4 className="room-heading">Forest Feels <GiBranchArrow size={45} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
               <p className="room-text">
               Stroll into our room of woodland and let the 
               nature enfold and re energize your soul</p>
