@@ -48,6 +48,10 @@ button {
   margin-top: 20px;
 }
 
+button:hover {
+  color: #8d4b35;
+}
+
 @media (min-width: 768px) {
   .book-welcome-text {
     font-size: 22px;
@@ -70,9 +74,22 @@ button {
 
   .guestdetails-box {
     width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  .guestdetails-box input {
+    width: 200px;
   }
 
   .book-details {
-    width: 80%;
+    width: 60%;
+  }
+
+  button {
+    height: 50px;
+    width: 130px;
+    font-size: 60px;
+    margin: 30px 30px;
   }
 }

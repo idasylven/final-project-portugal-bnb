@@ -9,6 +9,8 @@ import guestreservation from 'reducers/reservation'
 import Button from '../components/Button'
 import Footer from '../components/Footer'
 
+import './Summary.css'
+
 const Summary = () => {
   const accomodation = useSelector(store => store.guestreservation.accomodation)
   const details = useSelector(store => store.guestreservation.details)
@@ -53,8 +55,15 @@ const Summary = () => {
 
   return (
     <>
-      <div>
-        Hello from Confirmation!
+       <picture className="room-hero-container">
+         <h1 className="room-hero-heading">ALMOST THERE</h1>
+          <source srcSet="/assets/images/surfing.jpg" media="(max-width: 767px)"/>
+          <source srcSet="/assets/images/surfing.jpg" media="(max-width: 1024px)"/>
+          <img className="hero-image" src="/assets/images/surfing.jpg" alt="Hero background"/>
+        </picture>
+      <section className="summary-container">
+        <div className="summary-wrapper">
+          <h3 className="summary-heading">Check your details to confirm</h3>
         startdate: {new Date(accomodation.startdate).toDateString()}
         enddate: {new Date(accomodation.enddate).toDateString()}
         roomtype: {accomodation.roomtype}
@@ -63,7 +72,8 @@ const Summary = () => {
         last name: {details.lastname}
         email: {details.email}
         phone number: {details.phonenumber}
-      </div>
+        </div>
+      </section>
       <Button handleClick={onBookConfirm} label="Book" />
       <Footer />
     </>
