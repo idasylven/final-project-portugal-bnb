@@ -15,5 +15,14 @@
 }
 
 .summary-details {
+  display: flex;
+  flex-direction: column;
   font-family: Roboto Mono;
+  border: solid #452e21 1px;
+  padding: 20px;
+}
+
+.btn-book {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }

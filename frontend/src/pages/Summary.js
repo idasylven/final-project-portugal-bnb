@@ -63,18 +63,25 @@ const Summary = () => {
         </picture>
       <section className="summary-container">
         <div className="summary-wrapper">
-          <h3 className="summary-heading">Check your details to confirm</h3>
-        startdate: {new Date(accomodation.startdate).toDateString()}
-        enddate: {new Date(accomodation.enddate).toDateString()}
-        roomtype: {accomodation.roomtype}
-        number of guests: {accomodation.pax}
-        first name: {details.firstname}
-        last name: {details.lastname}
-        email: {details.email}
-        phone number: {details.phonenumber}
+        <h3 className="summary-heading">Check your details to confirm</h3>
+  
+        <div className="summary-details">
+        <p>Check In: {new Date(accomodation.startdate).toDateString()}</p>
+        <p>Check Out: {new Date(accomodation.enddate).toDateString()}</p>
+        <p>Room: {accomodation.roomtype}</p>
+        <p>Nr of guests: {accomodation.pax}</p>
+        <p>First Name: {details.firstname}</p>
+        <p>Last Name: {details.lastname}</p>
+        <p>Email: {details.email}</p>
+        <p>Phone Number: {details.phonenumber}</p>
         </div>
+        <div classname="btn-book">
+        <Button  handleClick={onBookConfirm} label="Book" />
+        </div>
+        </div>
+        
       </section>
-      <Button handleClick={onBookConfirm} label="Book" />
+      
       <Footer />
     </>
   )
