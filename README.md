@@ -53,3 +53,5 @@ Photo by <a href="https://unsplash.com/@charliegallant?utm_source=unsplash&utm_m
 Photo by <a href="https://unsplash.com/@ebmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eduardo Muniz</a> on <a href="https://unsplash.com/s/photos/lagos-portugal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 BIld av <a href="https://pixabay.com/sv/users/franky1st-1203890/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4379672">Frank Nürnberger</a> från <a href="https://pixabay.com/sv/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4379672">Pixabay</a>
+
+Font: Sea, Sand, Sun by Typhoon Type - Suthi Srisopha (daFont)

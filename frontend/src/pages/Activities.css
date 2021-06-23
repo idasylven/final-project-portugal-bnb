@@ -1,5 +1,40 @@
+.act-wrapper {
+  border: solid #452e21 1px;
+  padding: 10px;
+  margin: 10px;
+}
+.act-mob-heading {
+  font-family: Graduate;
+  color: #452e21;
+  margin-left: 20px;
+  margin-bottom: 28px;
+}
+
+.act-heading {
+  color: #6a6e54;
+  font-family: Courier;
+  font-size: 22px;
+  margin: 0;
+}
+
+/* #7c8062; */
+
 .act-text {
-  padding: 20px;
+  color: #452e21;
+  font-family: Roboto Mono;
+  font-size: 16px;
+}
+
+.act-link {
+  font-size: 16px;
+  font-family: Roboto Mono;
+  border-bottom: solid #452e21 1px;
+  padding: 0;
+}
+
+.act-link:hover {
+  color: #6a6e54;
+  border-bottom: solid #6a6e54 1px;
 }
 
 .act-img {
@@ -18,5 +53,9 @@
   .act-box-right {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .act-mob-heading {
+    display: none;
   }
 }
