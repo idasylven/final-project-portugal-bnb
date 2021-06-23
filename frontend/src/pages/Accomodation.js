@@ -49,20 +49,19 @@ const Accomodation = () => {
         <HamburgerMenu />
         </div>
         </div>
+       
          <picture>
           <source srcSet="/assets/images/alley.jpg" media="(max-width: 767px)"/>
           <source srcSet="/assets/images/alley.jpg" media="(max-width: 1024px)"/>
           <img className="hero-image" src="/assets/images/alley.jpg" alt="Hero background"/>
          </picture>
          <Navbar />
-         <p className="acc-welcome-text">
-          Casa de Shwee wanna welcome you to the gem of Portugal.
-            See what room
-            that connects with you!
-        </p>
+       
        
         <section className="room-container">
+        
         <h1 className="room-mob-heading">OUR ROOMS</h1>
+      
         <div className="room-box-left">
             <div className="room-wrapper">
               <h4 className="room-heading">Serenity Boost <GiBranchArrow size={30} style={{ transform:'rotate(-50deg)', verticalAlign:'middle' }}/></h4>
@@ -121,14 +120,16 @@ const Accomodation = () => {
             />
         </div>
         </div>
+        <hr className="solid"></hr>
         <div className="dd-room">
           <DropdownRoom  roomType={roomType} setRoomType={setRoomType}/>
         </div>
+        
         <div className="dd-pax">
           <DropdownPax  pax={pax} setPax={setPax}/>
         </div>
         <div className="btn-acc">
-          <Button handleClick={onAccomodationConfirm} label="Check availability"/>
+          <Button handleClick={onAccomodationConfirm} label="Next"/>
         </div>
       </section>
       <Footer />

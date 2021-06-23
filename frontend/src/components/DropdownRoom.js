@@ -3,7 +3,7 @@ import React from 'react'
 const DropdownRoom = ({ roomType, setRoomType }) => {
 
   return (
-    <div>
+    <div className="dd-room-container">
       <label>Rooms</label>
       <select
         onChange={event => setRoomType(event.target.value)}

@@ -10,14 +10,12 @@
 .acc-welcome-text {
   height: 85px;
   width: 200px;
+  font-family: Loggo-font;
+  font-size: 30px;
   border: solid black 1px;
-  position: absolute;
-  bottom: 200px;
-  top: 39px;
-  left: 85px;
-  right: 0;
   background-color: #edc0a78a;
   text-align: center;
+  z-index: 2;
 }
 
 .room-container {
@@ -48,8 +46,6 @@
   font-size: 22px;
   margin: 0;
 }
-/* 
-#6a6e54 */
 
 .room-text {
   color: #452e21;
@@ -64,7 +60,6 @@
 .acc-container {
   display: flex;
   flex-direction: column;
-  height: 80vh;
   width: 100vw;
 }
 
@@ -72,6 +67,7 @@
   font-family: Graduate;
   color: #452e21;
   margin-bottom: 28px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
 }
@@ -90,6 +86,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 100px;
 }
 
 .date-input {
@@ -97,30 +94,87 @@
   flex-direction: column;
 }
 
+.dd-room-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 .dd-room {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
+}
+
+.dd-room label {
+  font-family: Graduate;
+  color: #452e21;
+  width: 116px;
+}
+
+.dd-room select {
+  margin: 10px;
+  background: #f0f0f0;
+  height: 30px;
+  border-style: none;
+  box-shadow: 3px 3px 3px #c3b19c;
+  border-radius: 3px;
+  width: 130px;
+}
+
+.solid {
+  border-top: 1.5px solid #c3b19c;
+  width: 80%;
+}
+
+.dd-pax-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .dd-pax {
   display: flex;
   justify-content: space-evenly;
-  padding: 10px;
 }
 
-label {
-  padding: 10px;
+.dd-pax label {
+  font-family: Graduate;
+  color: #452e21;
+}
+
+.dd-pax select {
+  margin: 10px;
+  background: #f0f0f0;
+  height: 30px;
+  border-style: none;
+  box-shadow: 3px 3px 3px #c3b19c;
+  border-radius: 3px;
+  width: 130px;
 }
 
 .btn-acc {
   display: flex;
   justify-content: center;
+  margin: 40px 30px;
 }
 
-button {
+.btn-acc button {
   height: 40px;
   width: 100px;
+  background: #c3b19c;
+  border-radius: 3px;
+  font-family: Loggo-font;
+  font-size: 50px;
+  color: #452e21;
+  letter-spacing: 2px;
+  border-style: none;
+  box-shadow: 3px 3px 3px #452e21;
+}
+
+.btn-acc button:hover {
+  color: #8d4b35;
 }
 
 @media (min-width: 768px) {
