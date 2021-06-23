@@ -1,3 +1,12 @@
+.acc-hamb-container {
+  direction: rtl;
+}
+
+.acc-hamb-menu {
+  position: absolute;
+  z-index: 1;
+}
+
 .acc-welcome-text {
   height: 85px;
   width: 200px;
@@ -17,25 +26,39 @@
   flex-direction: column;
 }
 
-.room-box {
+.room-wrapper {
+  border: solid #452e21 1px;
+  padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
 }
 
-.room-description {
-  border: solid black 1px;
-  width: 85%;
-  height: 200px;
-  margin: 20px;
-  padding: 15px;
-  text-align: center;
-  font-size: 20px;
+.room-mob-heading {
+  font-family: Graduate;
+  color: #452e21;
+  margin-left: 20px;
+  margin-bottom: 28px;
 }
 
-.room-pics {
+.room-heading {
+  color: #8d4b35;
+  font-family: Courier;
+  font-size: 22px;
+  margin: 0;
+}
+/* 
+#6a6e54 */
+
+.room-text {
+  color: #452e21;
+  font-family: Roboto Mono;
+  font-size: 16px;
+}
+
+.room-img {
   width: 100%;
-  object-fit: contain;
 }
 
 .acc-container {
@@ -45,11 +68,33 @@
   width: 100vw;
 }
 
-.datepicker {
+.acc-heading {
+  font-family: Graduate;
+  color: #452e21;
+  margin-bottom: 28px;
   display: flex;
+  justify-content: center;
+}
+
+.datepicker-container {
+  display: flex;
+  align-items: flex-end;
   justify-content: space-evenly;
-  align-items: center;
-  height: 200px;
+  width: 100%;
+}
+
+.dates-container {
+  font-family: Graduate;
+  color: #452e21;
+  height: 112px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.date-input {
+  display: flex;
+  flex-direction: column;
 }
 
 .dd-room {
@@ -76,4 +121,23 @@ label {
 button {
   height: 40px;
   width: 100px;
+}
+
+@media (min-width: 768px) {
+  .room-img {
+    width: 50%;
+  }
+
+  .room-box-left {
+    display: flex;
+  }
+
+  .room-box-right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .room-mob-heading {
+    display: none;
+  }
 }
