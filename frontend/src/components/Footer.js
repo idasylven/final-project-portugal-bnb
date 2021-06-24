@@ -11,7 +11,9 @@ const Footer = () => {
       <p className="footer-details">+35 1 282 771 800</p>
       <p className="footer-details">info@casadeshwee.com</p>
       </div>
+      <div className="footer-copy-wrapper">
       <p className="footer-copy"><span className="copy-symbol">&#169;</span>Casa de Shwee</p>
+      </div>
     </footer>
   )
 }

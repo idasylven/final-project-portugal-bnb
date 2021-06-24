@@ -2,9 +2,12 @@
   width: 100vw;
   height: 15vh;
   background-color: #a5331abf;
+  padding-top: 20px;
+}
+
+.footer-details-wrapper {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
 }
 
 .footer-details {
