@@ -3,12 +3,25 @@
   height: 15vh;
   background-color: #a5331abf;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  padding-top: 20px;
 }
 
-.footer-text {
-  font-family: Graduate;
+.footer-details {
+  font-family: Roboto Mono;
   color: #442e20;
-  margin: 0;
+  margin: 0 0 0 20px;
+  font-size: 12px;
+}
+
+.footer-copy {
+  font-family: Roboto Mono;
+  color: #442e20;
+  font-size: 10px;
+}
+
+.copy-symbol {
+  font-size: 16px;
+  margin-right: 5px;
+  margin-left: 20px;
 }
