@@ -75,7 +75,7 @@ const Summary = () => {
         <p>Email: {details.email}</p>
         <p>Phone Number: {details.phonenumber}</p>
         </div>
-        <div classname="btn-book">
+        <div className="btn-book">
         <Button  handleClick={onBookConfirm} label="Book" />
         </div>
         </div>

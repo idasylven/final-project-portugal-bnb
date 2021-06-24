@@ -1,10 +1,10 @@
-.summary-wrapper {
+.conf-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.summary-heading {
+.conf-heading {
   color: #452e21;
   width: 70%;
   height: 100px;
@@ -15,35 +15,31 @@
   flex-direction: column;
   justify-content: center;
 }
-
-.summary-details {
+.conf-details {
   display: flex;
   flex-direction: column;
   font-family: Roboto Mono;
   border: solid #452e21 1px;
   padding: 20px;
-}
-
-.btn-book {
-  margin: 20px 0 30px 0;
+  margin-bottom: 35px;
 }
 
 @media (min-width: 768px) {
-  .summary-heading {
+  .conf-heading {
     font-size: 24px;
   }
 
-  .summary-details {
+  .conf-details {
     width: 50%;
   }
 }
 
 @media (min-width: 1200px) {
-  .summary-heading {
+  .conf-heading {
     font-size: 35px;
   }
 
-  .summary-details {
+  .conf-details {
     font-size: 25px;
   }
 }

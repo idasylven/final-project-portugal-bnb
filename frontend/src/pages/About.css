@@ -1,14 +1,35 @@
-.map-container {
-  width: 100vw;
-  height: 50vh;
+.about-container {
+  margin-bottom: 30px;
+}
+
+.about-wrapper {
+  border: solid #452e21 1px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.about-mob-heading {
+  font-family: Graduate;
+  color: #452e21;
+  margin-left: 20px;
+  margin-bottom: 28px;
 }
 
 .about-text {
-  padding: 20px;
+  color: #452e21;
+  font-family: Roboto Mono;
+  font-size: 16px;
+}
+
+.map-container {
+  width: 100vw;
+  height: 50vh;
+  border-top: 7px solid #a5331abf;
 }
 
 .about-img {
   width: 100%;
+  /* object-fit: contain; */
 }
 
 @media (min-width: 768px) {
@@ -23,5 +44,9 @@
   .about-box-right {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .about-mob-heading {
+    display: none;
   }
 }
