@@ -7,7 +7,6 @@ import './Navbar.css'
 
 const Navbar = () => {
   return (
-    <>
     <nav className="nav-container">
       <LoggoTablet />
       <ul className="nav-box">
@@ -17,7 +16,6 @@ const Navbar = () => {
         <li className="nav-links"><Link to="/about">ABOUT US</Link></li> 
       </ul>
     </nav>
-    </>
   )
 }
 

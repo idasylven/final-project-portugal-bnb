@@ -19,14 +19,14 @@ const Home = () => {
             </p>
             <p>
               Check in and revel in a good time, check out with a refilled soul of happiness.
-              </p>
-              <p>
-                Pick an experience to do and  choose a room
-                that connects with you!
-              </p>
+            </p>
+            <p>
+              Pick an experience to do and  choose a room
+              that connects with you!
+            </p>
           </div>
         </div>
-        <img className="pink-street-img" src="/assets/images/pink-street.jpg"></img>
+        <img className="pink-street-img" src="/assets/images/pink-street.jpg" alt="street with houses"></img>
       </section>
       <Footer />
     </main>

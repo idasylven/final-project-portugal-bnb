@@ -12,10 +12,10 @@ const DropdownRoom = ({ roomType, setRoomType }) => {
         value={roomType}
         >
           <option disabled aria-label='Choose a room'></option>
-          <option value='Red room'>Serenity Boost</option>
-          <option value='Green room'>Leafy Green</option>
-          <option value='Blue room'>Ocean Flow</option>
-          <option value='Blue room'>Forest Feels</option>
+          <option value='Serenity Boost'>Serenity Boost</option>
+          <option value='Leafy Green'>Leafy Green</option>
+          <option value='Ocean Flow'>Ocean Flow</option>
+          <option value='Forest Feels'>Forest Feels</option>
       </select>
     </div>
   )

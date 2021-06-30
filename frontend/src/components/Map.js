@@ -55,16 +55,3 @@ const CustomMap = () => {
 }
 
 export default CustomMap
-
-
-
-
-
-
-
-
-
-//  const markerLabel ='Casa de Shwee'
-// label={markerLabel}
-// restrict the API key
-// Get correct coodrinates for the house

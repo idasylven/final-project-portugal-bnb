@@ -1,13 +1,13 @@
-.acc-hamb-container {
+.hamb-container {
   direction: rtl;
 }
 
-.acc-hamb-menu {
+.hamb-menu {
   position: absolute;
   z-index: 1;
 }
 
-.room-hero-container {
+.book-hero-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-.room-hero-heading {
+.book-hero-heading {
   font-family: Loggo-font;
   color: #452e21;
   position: absolute;
@@ -54,6 +54,10 @@
   font-family: Courier;
   font-size: 22px;
   margin: 0;
+}
+
+.room-heading:hover {
+  color: #6a6e54;
 }
 
 .room-text {

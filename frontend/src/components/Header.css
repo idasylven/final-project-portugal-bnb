@@ -3,6 +3,16 @@
   src: url("/assets/fonts/Sea-Sand-Sun-Personal-Use.otf");
 }
 
+.header-container {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-items-container {
+  position: absolute;
+  width: 100%;
+}
+
 .hero-image {
   width: 100%;
   object-fit: contain;
@@ -15,71 +25,7 @@
   z-index: 1;
 }
 
-.header-container {
-  box-sizing: border-box;
-  width: 100%;
-}
-
 .mob-hamb-loggo-container {
-  direction: rtl;
-}
-
-.social-media-container {
-  position: absolute;
-  top: 185px;
-  right: 235px;
-  width: 100px;
-}
-
-.social-media-icons {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.social-media-links {
-  color: white;
-  padding: 6px;
-  line-height: 0;
-}
-
-.social-media-icons svg {
-  width: 20px;
-  height: 20px;
-  border: 2.5px solid #8e9c8bd6;
-  border-radius: 50%;
-  padding: 6px;
-  overflow: inherit;
-  background-color: #edc0a7b3;
-}
-
-.social-media-icons svg:hover {
-  color: #8e9c8bd6;
-}
-
-@media (min-width: 768px) {
-  .social-media-icons svg {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    margin: 6px;
-  }
-
-  .social-media-container {
-    top: 400px;
-    right: 545px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .social-media-container {
-    top: 565px;
-    right: 735px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .social-media-container {
-    top: 820px;
-    right: 1120px;
-  }
+  justify-content: flex-end;
 }

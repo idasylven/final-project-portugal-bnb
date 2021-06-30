@@ -42,33 +42,6 @@ a {
   background: #b88e71;
 }
 
-/* .loggo-desktop-container {
-  width: 50%;
-  padding: 40px 10px 0 0;
-}
-
-.loggo-desktop {
-  background-color: #edc0a7;
-  border: solid 2px #442e20;
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  transform: rotate(24deg);
-  display: none;
-  justify-content: center;
-  align-items: center;
-  margin: 16px 70px 0 0;
-}
-
-.loggo-text-desktop {
-  color: #442e20;
-  font-family: Loggo-font;
-  font-size: 100px;
-  padding: 59px;
-  text-align: center;
-  font-weight: unset;
-} */
-
 @media (min-width: 768px) {
   .nav-container {
     display: flex;
@@ -84,23 +57,16 @@ a {
     margin-bottom: 35px;
   }
 
-  /* .loggo-desktop {
-    display: flex;
-  } */
+  .nav-links:hover:after {
+    width: 50%;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1024px) {
   .nav-container {
     display: flex;
   }
-
-  /* .loggo-desktop-container {
-    display: none;
-  } */
-
-  /* .loggo-desktop {
-    display: none;
-  } */
 
   .nav-box {
     display: flex;
@@ -112,6 +78,10 @@ a {
 
   a {
     padding: 20px;
+  }
+
+  .nav-links:hover:after {
+    width: 100%;
   }
 }
 

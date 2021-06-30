@@ -1,0 +1,58 @@
+.some-container {
+  position: absolute;
+  top: 185px;
+  right: 235px;
+}
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social-media-links {
+  color: white;
+  padding: 6px;
+  line-height: 0;
+}
+
+.social-media-icons svg {
+  width: 20px;
+  height: 20px;
+  border: 2.5px solid #8e9c8bd6;
+  border-radius: 50%;
+  padding: 6px;
+  overflow: inherit;
+  background-color: #edc0a7b3;
+}
+
+.social-media-icons svg:hover {
+  color: #8e9c8bd6;
+}
+
+@media (min-width: 768px) {
+  .social-media-icons svg {
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    margin: 6px;
+  }
+
+  .some-container {
+    top: 400px;
+    right: 545px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .some-container {
+    top: 565px;
+    right: 735px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .some-container {
+    top: 820px;
+    right: 1120px;
+  }
+}

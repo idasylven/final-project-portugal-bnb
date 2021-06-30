@@ -8,6 +8,8 @@ import guestreservation from 'reducers/reservation'
 
 import Button from '../components/Button'
 import Footer from '../components/Footer'
+import HamburgerMenu from 'components/HamburgerMenu'
+import Navbar from '../components/Navbar'
 
 import './Summary.css'
 
@@ -55,33 +57,34 @@ const Summary = () => {
 
   return (
     <>
-       <picture className="room-hero-container">
-         <h1 className="room-hero-heading">ALMOST THERE</h1>
-          <source srcSet="/assets/images/surfing.jpg" media="(max-width: 767px)"/>
-          <source srcSet="/assets/images/surfing.jpg" media="(max-width: 1024px)"/>
-          <img className="hero-image" src="/assets/images/surfing.jpg" alt="Hero background"/>
-        </picture>
+      <div className="hamb-container">
+        <div className="hamb-menu">
+          <HamburgerMenu />
+        </div>
+      </div>
+      <picture className="book-hero-container">
+        <h1 className="book-hero-heading">ALMOST THERE</h1>
+        <img className="hero-image" src="/assets/images/surfing.jpg" alt="Hero background"/>
+      </picture>
+      <Navbar />
       <section className="summary-container">
         <div className="summary-wrapper">
-        <h3 className="summary-heading">Check your details to confirm</h3>
-  
-        <div className="summary-details">
-        <p>Check In: {new Date(accomodation.startdate).toDateString()}</p>
-        <p>Check Out: {new Date(accomodation.enddate).toDateString()}</p>
-        <p>Room: {accomodation.roomtype}</p>
-        <p>Nr of guests: {accomodation.pax}</p>
-        <p>First Name: {details.firstname}</p>
-        <p>Last Name: {details.lastname}</p>
-        <p>Email: {details.email}</p>
-        <p>Phone Number: {details.phonenumber}</p>
+          <h3 className="summary-heading">Check your details to confirm</h3>
+            <div className="summary-details">
+              <p>Check In: {new Date(accomodation.startdate).toDateString()}</p>
+              <p>Check Out: {new Date(accomodation.enddate).toDateString()}</p>
+              <p>Room: {accomodation.roomtype}</p>
+              <p>Nr of guests: {accomodation.pax}</p>
+              <p>First Name: {details.firstname}</p>
+              <p>Last Name: {details.lastname}</p>
+              <p>Email: {details.email}</p>
+              <p>Phone Number: {details.phonenumber}</p>
+            </div>
+            <div className="btn-book">
+              <Button  handleClick={onBookConfirm} label="Book" />
+            </div>
         </div>
-        <div className="btn-book">
-        <Button  handleClick={onBookConfirm} label="Book" />
-        </div>
-        </div>
-        
       </section>
-      
       <Footer />
     </>
   )

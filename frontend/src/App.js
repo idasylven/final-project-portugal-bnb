@@ -7,12 +7,11 @@ import guestreservation from './reducers/reservation'
 
 import About from './pages/About'
 import Accomodation from './pages/Accomodation'
-import Summary from './pages/Summary'
 import Activities from './pages/Activities'
 import Book from './pages/Book'
 import Confirmation from './pages/Confirmation'
-import Error from './pages/Error'
 import Home from './pages/Home'
+import Summary from './pages/Summary'
 
 const reducer = combineReducers({
   guestreservation: guestreservation.reducer
@@ -32,7 +31,6 @@ export const App = () => {
           <Route exact path="/confirmation" component={Confirmation} />
           <Route exact path="/activities" component={Activities} />
           <Route exact path="/about" component={About} />
-          <Route component={Error} />
         </Switch>
       </BrowserRouter>
     </Provider>
@@ -40,6 +38,3 @@ export const App = () => {
   )
 }
 
-// Put the provider store back on line 26 and 39
-// Do we really need exact on all paths? Won´t work if we remove them, should we do something else then instead
-// Perhaps we need to move the Navbar for it to display below hero image?
