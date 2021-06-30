@@ -17,34 +17,11 @@
 
 .header-container {
   box-sizing: border-box;
-  /* height: 80vh; */
   width: 100%;
-  /* border: solid black 2px; */
 }
 
 .mob-hamb-loggo-container {
   direction: rtl;
-}
-
-.loggo {
-  background-color: #edc0a7;
-  border: solid 2px #442e20;
-  border-radius: 50%;
-  width: 53px;
-  height: 53px;
-  transform: rotate(24deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 16px 7px 0 0;
-}
-
-.loggo-text {
-  font-size: 20px;
-  font-family: Loggo-font;
-  color: #442e20;
-  padding: 12px;
-  text-align: center;
 }
 
 .social-media-container {
@@ -80,11 +57,6 @@
 }
 
 @media (min-width: 768px) {
-  .loggo,
-  .loggo-text {
-    display: none;
-  }
-
   .social-media-icons svg {
     width: 40px;
     height: 40px;
@@ -99,21 +71,6 @@
 }
 
 @media (min-width: 1024px) {
-  .loggo {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    margin: 100px 135px 0 0;
-  }
-
-  .loggo-text {
-    display: flex;
-    font-family: Loggo-font;
-    font-size: 100px;
-    padding: 59px;
-    text-align: center;
-  }
-
   .social-media-container {
     top: 565px;
     right: 735px;
@@ -121,16 +78,6 @@
 }
 
 @media (min-width: 1200px) {
-  .loggo {
-    width: 350px;
-    height: 350px;
-    margin: 190px 210px 0 0;
-  }
-
-  .loggo-text {
-    font-size: 143px;
-  }
-
   .social-media-container {
     top: 820px;
     right: 1120px;

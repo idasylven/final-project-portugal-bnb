@@ -4,6 +4,7 @@ import { GrInstagram } from 'react-icons/gr'
 
 import HamburgerMenu from './HamburgerMenu'
 import Navbar from './Navbar'
+import Loggo from './Loggo'
 
 import './Header.css'
 
@@ -13,9 +14,7 @@ const Header = () => {
     <header className="header-container">
       <div className="mob-hamb-loggo-container">
       <div className="mob-nav-container">
-        <div className="loggo">
-          <p className="loggo-text">CASA DE SWHEE</p>
-        </div>
+        <Loggo />
         <HamburgerMenu />
         </div>
       <div className="social-media-container">

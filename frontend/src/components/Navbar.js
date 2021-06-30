@@ -1,17 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import LoggoTablet from './LoggoTablet'
+
 import './Navbar.css'
 
 const Navbar = () => {
   return (
     <>
     <nav className="nav-container">
-      <div className="loggo-desktop-container">
-        <div className="loggo-desktop">
-          <h1 className="loggo-text-desktop">CASA DE SHWEE</h1>
-        </div>
-      </div>
+      <LoggoTablet />
       <ul className="nav-box">
         <li className="nav-links"><Link to="/">HOME</Link></li>
         <li className="nav-links"><Link to="/accomodation">BOOK</Link></li>

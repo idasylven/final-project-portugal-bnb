@@ -1,22 +1,22 @@
 import React from 'react'
 import { GoogleMap, withScriptjs, withGoogleMap, Marker } from 'react-google-maps'
 
-import MapStyles from './MapStyles' //importing the styling
+import MapStyles from './MapStyles' 
 
 const Map = () => {
 
   return (
     <>
-    <GoogleMap // key info
-      defaultZoom={12} //how far you want it to be zoomed
-      defaultCenter={{ lat: 37.101910, lng:-8.673240 }} //where you want the center when it loads for the first time (LAGOS)
-      defaultOptions={{ styles: MapStyles }} //applying the styling
+    <GoogleMap 
+      defaultZoom={12} 
+      defaultCenter={{ lat: 37.101910, lng:-8.673240 }} 
+      defaultOptions={{ styles: MapStyles }} 
     />
     <Marker 
       position={{ lat: 37.094990, lng:-8.682140 }} 
       name={'Casa de Shwee'}
       title={'Casa de Shwee'}
-      icon={{ url: './assets/icons/home-location.svg', scaledSize: new window.google.maps.Size(50,50)}} //size
+      icon={{ url: './assets/icons/home-location.svg', scaledSize: new window.google.maps.Size(50,50)}} 
     />
     <Marker 
       position={{ lat: 37.091680, lng:-8.667900 }} 
@@ -38,17 +38,17 @@ const Map = () => {
   )
 }
 
-const WrappedMap = withScriptjs(withGoogleMap(Map)) //will embed the Google script that it needs to wrap correctly
+const WrappedMap = withScriptjs(withGoogleMap(Map)) 
 
 const CustomMap = () => {
   return (
     <div className="map-container">
-      <WrappedMap  //using the wrapped map here
+      <WrappedMap 
         googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp&
         libraries=geometry,drawing,places&key=AIzaSyCOUeTGU1MZnvJOJQel83CGcExArJEW0i4`} 
-        loadingElement={<div style={{ height: "100%" }}/>} //props that we need to pass
-        containerElement={<div style={{ height: "100%" }}/>} //props that we need to pass
-        mapElement={<div style={{ height: "100%" }}/>} //props that we need to pass
+        loadingElement={<div style={{ height: "100%" }}/>} 
+        containerElement={<div style={{ height: "100%" }}/>} 
+        mapElement={<div style={{ height: "100%" }}/>} 
       />
     </div>
   )

@@ -42,7 +42,7 @@ a {
   background: #b88e71;
 }
 
-.loggo-desktop-container {
+/* .loggo-desktop-container {
   width: 50%;
   padding: 40px 10px 0 0;
 }
@@ -67,7 +67,7 @@ a {
   padding: 59px;
   text-align: center;
   font-weight: unset;
-}
+} */
 
 @media (min-width: 768px) {
   .nav-container {
@@ -84,9 +84,9 @@ a {
     margin-bottom: 35px;
   }
 
-  .loggo-desktop {
+  /* .loggo-desktop {
     display: flex;
-  }
+  } */
 }
 
 @media (min-width: 1024px) {
@@ -94,13 +94,13 @@ a {
     display: flex;
   }
 
-  .loggo-desktop-container {
+  /* .loggo-desktop-container {
     display: none;
-  }
+  } */
 
-  .loggo-desktop {
+  /* .loggo-desktop {
     display: none;
-  }
+  } */
 
   .nav-box {
     display: flex;
