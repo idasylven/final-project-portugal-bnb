@@ -1,40 +1,69 @@
 .footer-container {
   width: 100vw;
-  height: 15vh;
+  height: 45vh;
   background-color: #a5331abf;
-  padding-top: 20px;
-}
-
-.footer-details-wrapper {
+  padding-top: 38px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.footer-loggo-container {
+}
+
+.footer-loggo {
+  background-color: rgb(253 249 244 / 90%);
+  border-radius: 50%;
+  width: 53px;
+  height: 53px;
+  transform: rotate(24deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 7px 0 0;
+}
+
+.footer-loggo-text {
+  font-size: 20px;
+  font-family: Loggo-font;
+  color: #a5331abf;
+  padding: 12px;
+  text-align: center;
+}
+
+.footer-some-container {
+  margin: 25px 0 0 0;
+}
+
+.footer-some-links {
+  color: white;
+}
+
+.footer-some-icons svg {
+  background-color: turquoise;
+}
+
+.footer-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0 0 0;
 }
 
 .footer-details {
   font-family: Roboto Mono;
-  color: #442e20;
-  margin: 0 0 0 20px;
+  color: white;
+  margin: 0;
   font-size: 12px;
 }
 
 .footer-copy {
   font-family: Roboto Mono;
-  color: #442e20;
+  color: white;
   font-size: 10px;
 }
 
 .copy-symbol {
   font-size: 16px;
-  margin-right: 5px;
-  margin-left: 20px;
-}
-
-@media (min-width: 1200px) {
-  .footer-details {
-    font-size: 18px;
-  }
-
-  .footer-copy {
-    font-size: 16px;
-  }
+  margin: 0 5px 0 0;
 }
