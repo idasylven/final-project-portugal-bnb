@@ -52,17 +52,16 @@ const GuestDetails = mongoose.model("GuestDetails", {
     required: [true, "Email address is required"],
     trim: [true, "Email can not include empty space"],
     lowercase: [true, "Please, use only lowercase letters"],
-    validate: [validateEmail, "Please fill a valid email address"],
     match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, "Please fill a valid email address"]
 },
   phonenumber: {
     type: Number, 
-    required: [true,"Phone number required"],
+    required: [true, "Phone number required"],
     validate: {
       validator: () => {
         return /\d{3}-\d{3}-\d{4}/.test(v);
       },
-      message: "{VALUE} is not a valid phone number"
+      message: "Sorry, this is not a valid phone number"
     }
   }
   
@@ -79,18 +78,12 @@ const GuestReservation = mongoose.model("GuestReservation", {
   }
 })
 
-// Defines the port the app will run on. Defaults to 8080, but can be 
-// overridden when starting the server. For example:
-//
-//   PORT=9000 npm start
 const port = process.env.PORT || 8080
 const app = express()
 
-// Add middlewares to enable cors and json body parsing
 app.use(cors())
 app.use(express.json())
 
-// Start defining your routes here
 app.get('/', (req, res) => {
   res.send(listEndpoints(app))
 })
@@ -122,8 +115,6 @@ app.post("/reservation", async (req, res) => {
   }
 })
 
-// Start the server
 app.listen(port, () => {
-  // eslint-disable-next-line
   console.log(`Server running on http://localhost:${port}`)
 })

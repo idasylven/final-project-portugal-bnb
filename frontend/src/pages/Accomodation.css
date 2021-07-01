@@ -204,14 +204,20 @@
     flex-direction: row-reverse;
   }
 
-  .room-hero-heading {
+  .book-hero-heading {
     font-size: 150px;
   }
 }
 
+@media (min-width: 1024px) {
+  .book-hero-heading {
+    font-size: 180px;
+  }
+}
+
 @media (min-width: 1200px) {
-  .room-hero-heading {
-    font-size: 215px;
+  .book-hero-heading {
+    font-size: 250px;
   }
 
   .room-heading {

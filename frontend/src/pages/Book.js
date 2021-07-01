@@ -20,7 +20,6 @@ const Book = () => {
 
   const accomodation = useSelector(store => store.guestreservation.accomodation)
   const details = useSelector(store => store.guestreservation.details)
-  console.log(accomodation)
 
   const history = useHistory()
   const dispatch = useDispatch()
