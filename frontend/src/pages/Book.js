@@ -18,9 +18,9 @@ const Book = () => {
   const [email, setEmail] = useState('')
   const [phoneNumber, setPhoneNumber] = useState('')
 
-  // const accomodation = useSelector(store => store.guestreservation.accomodation)
-  // const details = useSelector(store => store.guestreservation.details)
-  // console.log(accomodation)
+  const accomodation = useSelector(store => store.guestreservation.accomodation)
+  const details = useSelector(store => store.guestreservation.details)
+  console.log(accomodation)
 
   const history = useHistory()
   const dispatch = useDispatch()
