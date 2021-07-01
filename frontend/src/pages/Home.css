@@ -29,6 +29,7 @@
 .pink-street-img {
   width: 100%;
   object-fit: contain;
+  display: block;
 }
 
 @media (min-width: 768px) {

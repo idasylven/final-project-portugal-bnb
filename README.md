@@ -4,15 +4,69 @@ Replace this readme with your own information about your project.
 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
-# The problem
+Full stack project
+Pair-programmed
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Idea:
+
+Concept:
+
+# Technologies
+
+Tools and techniques used:
+
+- React
+- Redux
+- Separate CSS files
+- RESTful API (?)
+- Mongo DB
+- Google Maps API
+- React Icons
+- SVG Icons
+- Favicon
+- Snazzy Maps
+- Flexbox
+- Media Quaries
+- Browser Testing
+- daFont
+- Miro
+
+# Planning
+
+Describe how you approached to problem. How did you plan?
+We started out by creating a clear concept of our project - we did a lot of research for our mood board and for the initial sketches of the different layouts for mobile, tablet and desktop view. After setting up all front- and backend files we started out by doing the main functionalities of our site. We both find this aspect quite challangeing work together on this particular part of the project.
+
+# Problems
+
+We ran into a lot of problems along the way, they were all very frustrating at the time - but we've also learned a lot and got a deeper understading for several errors and issues by solving them. One realisation is that planning and trouble shooting take way longer than doing the actual syntax itself.
+
+Defactor
+Nesting
+Planning of components - where do you draw the line? FURTHER PLANNING
+
+# For the future
+
+We have plenty of additional ideas for this project - both in terms of further functionalities and content as well as improvments of current features. Our main goals are to:
+
+- To connect with AirBnB
+- Display error messages in the frontend
+- Make labels for our map icons (dive club etc)
+- Look into big device styling
+- To have valid links (social media)
+- Fix our bug with the button
+- Expand with info about rooms and activities
+- Tweak of styling, and with a focus on input sections
 
 # View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+To view our project live please follow this link: https://casadeshwee.netlify.app/
+Link to our deployed database: https://portugal-bnb.herokuapp.com/
 
-Photo by Emma Van Sant/Unsplash
+# Credits
+
+Photo credits:
+
+Photo by <a href="https://unsplash.com/@emma?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Emma Van Sant</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
 Photo by <a href="https://unsplash.com/@alilove69?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ali Mucci</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
@@ -52,6 +106,8 @@ Photo by <a href="https://unsplash.com/@charliegallant?utm_source=unsplash&utm_m
 
 Photo by <a href="https://unsplash.com/@ebmuniz?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Eduardo Muniz</a> on <a href="https://unsplash.com/s/photos/lagos-portugal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 
-BIld av <a href="https://pixabay.com/sv/users/franky1st-1203890/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4379672">Frank Nürnberger</a> från <a href="https://pixabay.com/sv/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4379672">Pixabay</a>
+Photo by <a href="https://pixabay.com/sv/users/franky1st-1203890/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4379672">Frank Nürnberger</a> on <a href="https://pixabay.com/sv/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4379672">Pixabay</a>
 
-Font: Sea, Sand, Sun by Typhoon Type - Suthi Srisopha (daFont)
+Font Credit:
+
+Sea, Sand, Sun by Typhoon Type/Suthi Srisopha on daFont
