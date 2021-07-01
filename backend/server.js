@@ -37,20 +37,35 @@ const GuestDetails = mongoose.model("GuestDetails", {
   
   firstname: {
     type: String, 
-    required: true,
+    required: [true,"Name is required"],
+    minlength: [2, "First name has to be at least 2 characters"],
+    maxlength: [50, "First name can not exceed the maximum of 50 characters"]
   },
   lastname: {
     type: String,
-    required: true,
+    required: [true,"Name is required"],
+    minlength: [2, "Last name has to be at least 2 characters"],
+    maxlength: [50, "Last name can not exceed the maximum of 50 characters"]
   },
   email: {
     type: String,
-    required: true,
-  },
+    required: [true, "Email address is required"],
+    trim: [true, "Email can not include empty space"],
+    lowercase: [true, "Please, use only lowercase letters"],
+    validate: [validateEmail, "Please fill a valid email address"],
+    match: [/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, "Please fill a valid email address"]
+},
   phonenumber: {
     type: Number, 
-    required: true,
+    required: [true,"Phone number required"],
+    validate: {
+      validator: () => {
+        return /\d{3}-\d{3}-\d{4}/.test(v);
+      },
+      message: "{VALUE} is not a valid phone number"
+    }
   }
+  
 })
 
 const GuestReservation = mongoose.model("GuestReservation", {
