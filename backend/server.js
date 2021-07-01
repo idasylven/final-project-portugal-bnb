@@ -56,16 +56,11 @@ const GuestDetails = mongoose.model("GuestDetails", {
 },
   phonenumber: {
     type: Number, 
-    required: [true, "Phone number required"],
-    validate: {
-      validator: () => {
-        return /\d{3}-\d{3}-\d{4}/.test(v);
-      },
-      message: "Sorry, this is not a valid phone number"
+    required: [true, "Phone number required"]
     }
   }
   
-})
+)
 
 const GuestReservation = mongoose.model("GuestReservation", {
   accomodation: {
