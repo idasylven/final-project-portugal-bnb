@@ -1,6 +1,6 @@
 # Final Project: Portugal B&B
 
-This site is a fullstack application that was made as the final project of Technigo Boot Camp of spring 2021, developed and pair-programmed by Yennie Leek and Ida Sylvén.
+This site is a fullstack application that was made as the final project of Technigo Boot Camp of spring 2021, developed and pair-programmed by <a href="https://github.com/Yennie-Leek">Yennie Leek</a> and <a href="https://github.com/idasylven">Ida Sylvén.</a>
 
 The idea for our project came from having a dream of opening a hostel/bnb in Portugal in the future, so we thought that it could be cool to do a “mock-up” page for it! The main purpose is to help the customers to book rooms and for the owner to market the business. The atmosphere of the B&B will be personal, friendly and a bit adventurous!
 
