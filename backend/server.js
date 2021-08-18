@@ -83,6 +83,33 @@ app.get('/', (req, res) => {
   res.send(listEndpoints(app))
 })
 
+app.get("/reservations", async (req, res) => {
+  try {
+    const reservations = await GuestReservation.find()
+    res.status(200).json({
+      success: true,
+      reservations
+    })
+  } catch (error) {
+    res.status(400).json({ success: false, message: 'Invalid request', error })
+  }
+})
+
+app.get("/reservation/:id", async (req, res) => {
+  const { id } = req.params
+
+  try {
+    const reservation = await GuestReservation.findById(id)
+
+    res.status(200).json({
+      success: true,
+      reservation
+    })
+  } catch (error) {
+    res.status(400).json({ success: false, message: 'Invalid request', error })
+  }
+}) 
+
 app.post("/reservation", async (req, res) => {
   const { startdate, enddate, roomtype, pax, firstname, lastname, email, phonenumber } = req.body
 
