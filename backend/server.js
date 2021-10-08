@@ -86,9 +86,27 @@ app.get('/', (req, res) => {
 app.get("/reservations", async (req, res) => {
   try {
     const reservations = await GuestReservation.find()
+
+    const fixedResult = []
+    for (const reservation of reservations) {
+      const reservationAccomodation = await GuestAccomodation.findById(reservation.accomodation)
+      const reservationDetails = await GuestDetails.findById(reservation.details)
+      fixedResult.push({
+        _id: reservation._id,
+        startdate: reservationAccomodation.startdate,
+        enddate: reservationAccomodation.enddate,
+        roomtype: reservationAccomodation.roomtype,
+        pax: reservationAccomodation.pax,
+        firstname: reservationDetails.firstname,
+        lastname: reservationDetails.lastname,
+        email: reservationDetails.email,
+        phonenumber: reservationDetails.phonenumber
+      })
+    }
+
     res.status(200).json({
       success: true,
-      reservations
+      result: fixedResult
     })
   } catch (error) {
     res.status(400).json({ success: false, message: 'Invalid request', error })
@@ -101,9 +119,20 @@ app.get("/reservation/:id", async (req, res) => {
   try {
     const reservation = await GuestReservation.findById(id)
 
+    const reservationAccomodation = await GuestAccomodation.findById(reservation.accomodation)
+    const reservationDetails = await GuestDetails.findById(reservation.details)
+
     res.status(200).json({
       success: true,
-      reservation
+      _id: id,
+      startdate: reservationAccomodation.startdate,
+      enddate: reservationAccomodation.enddate,
+      roomtype: reservationAccomodation.roomtype,
+      pax: reservationAccomodation.pax,
+      firstname: reservationDetails.firstname,
+      lastname: reservationDetails.lastname,
+      email: reservationDetails.email,
+      phonenumber: reservationDetails.phonenumber
     })
   } catch (error) {
     res.status(400).json({ success: false, message: 'Invalid request', error })
